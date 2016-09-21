@@ -1,5 +1,6 @@
 /**
- * 这个项目是我刚刚从github上面才导入到本地的工程。
+ * 1.这个项目是我刚刚从github上面才导入到本地的工程。
+ * 2.现在把握github上的cancer导入到本地的htdocs文件夹里面了 以后可以直接管理了。
  */
 -- MySQL dump 10.13  Distrib 5.6.25, for Linux (x86_64)
 --
