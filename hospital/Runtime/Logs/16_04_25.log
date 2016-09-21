@@ -1,0 +1,18 @@
+[ 2016-04-25T10:26:59+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/login
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-04-25T13:08:44+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Auth/__CONTROLLER__/xiugai
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T13:08:55+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Auth/__CONTROLLER__/xiugai
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T13:08:59+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Auth/__CONTROLLER__/xiugai
+ERR: 非法操作:__CONTROLLER__
+
+[ 2016-04-25T13:09:04+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/xiugai
+ERR: 非法操作:xiugai
+
+[ 2016-04-25T13:12:01+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Auth/__CONTROLLER__/xiugai
+ERR: 非法操作:__CONTROLLER__
+

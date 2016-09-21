@@ -1,0 +1,84 @@
+<html>
+<title></title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<p><b>生物标记引物查询</b></p>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<fonr size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/biomarkerprimer_search1"
+	<tr>
+		<td align="right">Disease Name</td><td><input type="text" name="diseasename" id="diseasename" size="25"></td>
+		<td align="right">&nbsp;Gene Symbol</td><td><input type="text" name="genesymbol" id="genesymbol" size="25"></td>
+		<td align="right">&nbsp;<input type="submit" name="Submit" value="Search" onclick=""></td>
+		
+	</tr>
+</form>
+</table>   
+<br><br>
+
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                         <td>序号</td>
+                        <td>Disease Name</td>
+                        <td>Product Length</td>
+                        <td>Gene Symbol</td>
+                        <td>Gene ID</td>
+                        <td>Primer Description</td>
+                        <td>Sample Type</td>
+                        <td>For_Template Strand</td>
+                        <td>For_Start</td>
+                        <td>For_Stop</td>
+                        <td>For_Tm</td>
+                        <td>For_GC</td>
+                        <td>For_Primer Sequence</td>
+                        <td>Rev_Template Strand</td>
+                        <td>Rev_Start</td>
+                        <td>Rev_Stop</td>
+                        <td>Rev_Tm</td>
+                        <td>Rev_GC</td>
+                        <td>Rev_Primer Sequence</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.DiseaseName}</td>
+                        <td>{$v.ProductLength}</a></td>
+                        <td>{$v.GeneSymbol}</td>
+                        <td>{$v.GeneID}</td>
+                        <td>{$v.PrimerDescription}</td>
+                        <td>{$v.SampleType}</td>
+                        <td>{$v.For_TemplateStrand}</td>
+                        <td>{$v.For_Start}</td>
+                        <td>{$v.For_Stop}</td>
+                        <td>{$v.For_Tm}</td>
+                        <td>{$v.For_GC}</td>
+                        <td>{$v.For_PrimerSequence}</td>
+                        <td>{$v.Rev_TemplateStrand}</td>
+                        <td>{$v.Rev_Start}</td>
+                        <td>{$v.Rev_Stop}</td>
+                        <td>{$v.Rev_Tm}</td>
+                        <td>{$v.Rev_GC}</td>
+                        <td>{$v.Rev_PrimerSequence}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/biomarkerprimer_xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/biomarkerprimer_delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    <tr>
+                      <td colspan="100" style="text-align: center;">
+                            {$pagelist}
+                      </td>
+                    </tr>
+</table>
+
+</body>
+</html>

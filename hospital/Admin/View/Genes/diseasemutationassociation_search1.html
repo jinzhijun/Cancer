@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<p><b>疾病突变关联分析查询</b></p>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__SELF__}">
+	<tr>
+		<td align="right">Disease Name</td>
+		<td><input type="text" name="diseasename" id="diseasename" size="25"></td>
+		<td>&nbsp;
+		<input type="submit" name="Submit" value="Search" onclick="return check(myform)">
+		
+		
+		</td>
+	</tr>
+</form>
+</table>
+<br><br>
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>DiseaseName</td>
+                        <td>Mutation</td>
+                        <td>Biomarker</td>
+                        <td>Reference</td>
+                        <td>MedicationGuide_CN</td>
+                        <td>MedicationGuide</td>
+                        <td>Significance Of GeneTesting</td>
+                        <td>Description</td>
+                        <td>LastUpdated</td>
+                        <td>Operator</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+                       <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.DiseaseName}</td>
+                        <td>{$v.MutationCatrgory}</a></td>
+                        <td>{$v.Biomarker}</td>
+                        <td>{$v.Reference}</td>
+                        <td>{$v.MedicationGuide_CN}</td>
+                        <td>{$v.MedicationGuide}</td>
+                        <td>{$v.SignificanceOfGeneTesting}</td>
+                        <td>{$v.Description}</td>
+                        <td>{$v.LastUpdated}</td>
+                        <td>{$v.Operator}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/diseasemutationassociation_xiugai/id/{$v.ID}">修改</a></td>
+                       <td><a href="{$smarty.const.__CONTROLLER__}/diseasemutationassociation_delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    
+</table>
+</font>
+</body>
+</html>

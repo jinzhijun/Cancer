@@ -1,0 +1,223 @@
+<html>
+<head>
+	<link href="{$smarty.const.Admin_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+		.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+	<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：治疗计划-》添加治疗计划</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<font size="1" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table class="table_a" border="1" width="100%">
+	<tr>
+	<td align="right">Disease Name:</td><td><input type="text" name="DiseaseName" value="{$info.DiseaseName}"></td>
+	<td align="right">Disease Sub Type:</td><td><input type="text" name="DiseaseSubType" value="{$info.DiseaseSubType}"></td>
+	<td align="right">Disease Stage:</td>
+	<td>
+	<select name="DiseaseStage">
+			<option value="0">--------请选择-------</option>
+                {foreach $info as $k => $v}
+                <option value="{$v.DiseaseStage}">{$v.DiseaseStage}</option>
+                 {/foreach}
+			</select>
+	</td>
+	</tr>
+	<tr>
+	<td align="right">Drug Category:</td>
+	<td>
+	<select name="DrugCategory">
+		<option value="0">--------请选择-------</option>
+                {foreach $info as $k => $v}
+                <option value="{$v.DrugCategory}">{$v.DrugCategory}</option>
+                 {/foreach}
+		</select></td>
+	<td align="right">Ranking:</td><td><input type="text" name="Ranking" value="{$info.Ranking}"></td>
+	<td align="right">Status:</td><td><input type="text" name="Status" value="{$info.Status}"></td>
+	</tr>
+	<tr>
+	<td align="right">OS(Month):</td><td><input type="text" name="OS_month" value="{$info.OS_month}"></td>
+	<td align="right">Hazard rato(OS):</td><td><input type="text" name="HazardRatio_OS" value="{$info.HazardRatio_OS}"></td>
+	<td align="right">CI(OS):</td><td><input type="text" name="CI_OS" value="{$info.CI_OS}"></td>
+	</tr>
+	<tr>
+	<td align="right">PFS(Month):</td><td><input type="text" name="PFSMonth" value="{$info.PFSMonth}"></td>
+	<td align="right">Hazard rato(PFS):</td><td><input type="text" name="HazardRatio_PFS" value="{$info.HazardRatio_PFS}"></td>
+	<td align="right">CI(PFS):</td><td><input type="text" name="CI_PFS" value="{$info.CI_PFS}"></td>
+	</tr>
+	<tr>
+	<td align="right">Response Rate:</td><td><input type="text" name="ResponseRate" value="{$info.ResponseRate}"></td>
+	<td align="right">Compared Control:</td><td><input type="text" name="ComparedControl" value="{$info.ComparedControl}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Reference:</td><td><input type="text" name="Reference" value="{$info.Reference}">Reference id is separated by","</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Who Can Take:</td><td><input type="text" name="WhoCanTake" value="{$info.WhoCanTake}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">EBM levels of evidence:</td>
+	<td>
+	<select name="EBMlevels">
+		<option value="0">--------请选择-------</option>
+                {foreach $info as $k => $v}
+                <option value="{$v.EBMlevels}">{$v.EBMlevels}</option>
+                 {/foreach}
+		</select> 
+	</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Evidence Source:</td>
+	<td>
+	<select name="EvidenceSource">
+		<option value="0">--------请选择-------</option>
+                {foreach $info as $k => $v}
+                <option value="{$v.EvidenceSource}">{$v.EvidenceSource}</option>
+                 {/foreach}
+		</select> 
+	</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Description(Chinese):</td><td><textarea name="Description_Chinese" cols="40" rows="4">{$info.Description_Chinese}</textarea></td>
+	<td align="right">Drug Name:</td><td><input type="text" name="DrugName" value="{$info.DrugName}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">Drug:</td><td><textarea name="Drug" cols="40" rows="4">{$info.Drug}</textarea></td>
+	<td align="right">Mutation:</td><td><input type="text" name="Mutation" value="{$info.Mutation}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Biomarker:</td><td><textarea name="Biomarker" cols="40" rows="4">{$info.Biomarker}</textarea></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td align="right">Clinical Information:</td><td><textarea name="ClinicalInformation" cols="40" rows="4">{$info.ClinicalInformation}</textarea></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Clinical Chinese Information:</td><td><textarea name="ClinicalChineseInformation" cols="40" rows="4">{$info.ClinicalChineseInformation}</textarea></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	<td align="right">Side effects:</td><td><textarea name="SideEffects" cols="40" rows="4">{$info.SideEffects}</textarea></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+        <tr>
+	<td align="right">Last Updated:</td><td><input type="text" name="LastUpdated" value="{$smarty.now|date_format:'%Y-%m-%d %H:%M'}" readonly="readonly"></td><td  align="right">Operator:</td><td><input type="text" name="Operator" value="{$smarty.session.admin_name}" readonly="readonly"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.diseasename.value==""){
+			alert("请输入diseasename！");form.diseasename.focus();return false;
+		}
+		if(form.diseasesubtype.value==""){
+			alert("请输入diseasesubtype！");form.diseasesubtype.focus();return false;
+		}
+		
+		
+		if(form.ranking.value==""){
+			alert("请输入ranking！");form.rangking.focus();return false;
+		}
+		if(form.status.value==""){
+			alert("请输入status！");form.status.focus();return false;
+		}
+		if(form.osmonth.value==""){
+			alert("请输入osmonth！");form.osmonth.focus();return false;
+		}
+		if(form.hazardratoos.value==""){
+			alert("请输入hazardratoos！");form.hazardratoos.focus();return false;
+		}
+		if(form.cios.value==""){
+			alert("请输入cios！");form.cios.focus();return false;
+		}
+		if(form.pfsmonth.value==""){
+			alert("请输入pfsmonth！");form.pfsmonth.focus();return false;
+		}
+		if(form.hazardratopfs.value==""){
+			alert("请输入hazardratopfs！");form.hazardratopfs.focus();return false;
+		}
+		if(form.cipfs.value==""){
+			alert("请输入cipfs！");form.cipfs.focus();return false;
+		}
+		if(form.responserate.value==""){
+			alert("请输入responserate！");form.responserate.focus();return false;
+		}
+		if(form.comparedcontrol.value==""){
+			alert("请输入comparedcontrol！");form.comparedcontrol.focus();return false;
+		}
+		if(form.whocantake.value==""){
+			alert("请输入whocantake！");form.whocantake.focus();return false;
+		}
+		
+		
+		if(form.descriptionchinese.value==""){
+			alert("请输入descriptionchinese！");form.descriptionchinese.focus();return false;
+		}
+		if(form.drug.value==""){
+			alert("请输入drug！");form.drug.focus();return false;
+		}
+		if(form.biomarker.value==""){
+			alert("请输入biomarker！");form.biomarker.focus();return false;
+		}
+		if(form.lastupdated.value==""){
+			alert("请输入lastupdated！");form.lastupdated.focus();return false;
+		}
+		if(form.operator.value==""){
+			alert("请输入operator！");form.operator.focus();return false;
+		}
+		if(form.clinicalinformation.value==""){
+			alert("请输入clinicalinformation！");form.clinicalinformation.focus();return false;
+		}
+		if(form.clinicalchineseinformation.value==""){
+			alert("请输入clinicalchineseinformation！");form.clinicalchineseinformation.focus();return false;
+		}
+		if(form.sideeffect.value==""){
+			alert("请输入sideeffect！");form.sideeffect.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

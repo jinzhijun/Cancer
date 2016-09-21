@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：治疗计划-》治疗计划查询</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/search_handle">
+	<tr>
+		<td >Disease Name
+			<input type="text" name="diseasename" id="diseasename" size="25">
+			<input type=submit name="Submit" value="Search" onclick="">
+			
+		</td>
+	</tr>
+</form>
+</table>
+<br><br>
+
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>DiseaseName</td>
+                        <td>DiseaseSubType</td>
+                        <td>DiseaseStage</td>
+                        <td>DrugCategory</td>
+                        <td>Ranking</td>
+                        <td>Status</td>
+                        <td>OS_month</td>
+                        <td>HazardRatio_OS</td>
+                        <td>CI_OS</td>
+                         <td>PFSMonth</td>
+                        <td>HazardRatio_PFS</td>
+                        <td>CI_PFS</td>
+                        <td>ResponseRate</td>
+                        <td>ComparedControl</td>
+                        <td>Reference</td>
+                        <td>WhoCanTake</td>
+                        <td>EBMlevels</td>
+                        <td>EvidenceSource</td>
+                         <td>Description_Chinese</td>
+                        <td>Drug</td>
+                        <td>Biomarker</td>
+                        <td>DrugName</td>
+                        <td>Mutation</td>
+                        <td>ClinicalInformation</td>
+                         <td>ClinicalChineseInformation</td>
+                        <td>SideEffects</td>
+                        <td>LastUpdated</td>
+                        <td>Operator</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+                   
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.DiseaseName}</td>
+                        <td>{$v.DiseaseSubType}</a></td>
+                        <td>{$v.DiseaseStage}</td>
+                        <td>{$v.DrugCategory}</td>
+                        <td>{$v.Ranking}</td>
+                        <td>{$v.Status}</td>
+                        <td>{$v.OS_month}</td>
+                        <td>{$v.HazardRatio_OS}</td>
+                        <td>{$v.CI_OS}</td>
+                        <td>{$v.PFSMonth}</td>
+                        <td>{$v.HazardRatio_PFS}</a></td>
+                        <td>{$v.CI_PFS}</td>
+                        <td>{$v.ResponseRate}</td>
+                        <td>{$v.ComparedControl}</td>
+                        <td>{$v.Reference}</td>
+                        <td>{$v.WhoCanTake}</td>
+                        <td>{$v.EBMlevels}</td>
+                        <td>{$v.EvidenceSource}</td>
+                        <td>{$v.Description_Chinese}</td>
+                        <td>{$v.Drug}</a></td>
+                        <td>{$v.Biomarker}</td>
+                       
+                        <td>{$v.DrugName}</td>
+                        <td>{$v.Mutation}</td>
+                        <td>{$v.ClinicalInformation}</td>
+                        <td>{$v.ClinicalChineseInformation}</td>
+                        <td>{$v.SideEffects}</td>
+                        <td>{$v.LastUpdated}</td>
+                        <td>{$v.Operator}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    <tr>
+                      <td colspan="100" style="text-align: center;">
+                            {$pagelist}
+                      </td>
+                    </tr>
+</table>
+</font>
+</body>
+</html>

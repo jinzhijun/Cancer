@@ -1,0 +1,67 @@
+<html>
+<head></head>
+<body>
+<font size="4" color="black">
+	<p><b>添加参考序列</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}/refseqs_update">
+<input type="hidden" name="id" value="{$info.ID}"/>
+	<table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr><td align="right">Gene:</td><td><select name="gene" value="{$info.Gene}">
+		<option>1p19q</option>
+		<option>ROS1</option>
+		</td>
+		<td align="right">Accession:</td><td><input type="text" name="accession" value="{$info.Accession}"></td></tr>
+	<tr><td align="right">Accession Version:</td><td><input type="text" name="accessionversion" value="{$info.AccessionVersion}"></td><td align="right">Exons Start:</td><td><input type="text" name="exonsstart" value="{$info.ExonsStart}"></td></tr>
+	<tr><td align="right"></td><td></td><td align="right">Exons End:</td><td><input type="text" name="exonsend" value="{$info.ExonsEnd}"></td></tr>
+	<tr><td align="right">CDS Start:</td><td><input type="text" name="cdsstart" value="{$info.CDSstart}"></td><td align="right">CDS End:</td><td><input type="text" name="cdsend" value="{$info.CDSend}"></td></tr>
+	<tr><td align="right">Sequence:</td><td><textarea name="sequence" cols="50" rows="2" value="">{$info.Sequence}</textarea></td><td>&nbsp;</td></tr>
+</table>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+<!--	<input type="submit"  name="Submit2" value="Close" onClick="history.go(-1)">-->
+	</td>
+</tr>
+</form>
+<hr/>
+
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.gene.value==""){
+			alert("请输入gene！");form.gene.focus();return false;
+		}
+		if(form.accession.value==""){
+			alert("请输入accession！");form.accession.focus();return false;
+		}
+		if(form.accessionversion.value==""){
+			alert("请输入accession version！");form.accessionversion.focus();return false;
+		}
+		if(form.exonsstart.value==""){
+			alert("请输入exons start！");form.exonsstart.focus();return false;
+		}
+		if(form.exonsstartaminoacid.value==""){
+			alert("请输入exons start aminoacid！");form.exonsstartaminoacid.focus();return false;
+		}
+		if(form.exonsend.value==""){
+			alert("请输入exons end！");form.exonsend.focus();return false;
+		}
+		if(form.cdsstart.value==""){
+			alert("请输入cds start！");form.cdsstart.focus();return false;
+		}
+		if(form.cdsend.value==""){
+			alert("请输入cds end！");form.cdsend.focus();return false;
+		}
+		if(form.sequence.value==""){
+			alert("请输入sequence！");form.sequence.focus();return false;
+		}
+form.submit();
+}
+</script>
+<center>Copyright @Academy Of Military Medical Sciences</center>
+</font>
+</body>
+</html>

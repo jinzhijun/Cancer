@@ -1,0 +1,54 @@
+<html>
+<title></title>
+<head>
+<style type="text/css">
+    body{
+	border:1px solid silver;
+	width:800px;
+	height:auto;
+	margin:0 auto;
+	/* background-color:blue; */
+}
+span{
+	backgroud-color:#a2d2ff;
+	text-align:center;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	padding:10px;
+}
+.table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+</style>
+</head>
+<body><center>
+<form name="myform" method="post" action="{$smarty.const.__SELF__}">
+	<table border=0px>
+	<tr><td id=td1><strong>查询参考文献</strong></td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td><span class="left">标题&nbsp;&nbsp;:<input type="text" name="title" id="title"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span class="left">疾病类型&nbsp;&nbsp;:<input type="text" name="diseaseclass" id="diseaseclass"></span></td>
+	</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td><span class="left">关键词&nbsp;&nbsp;:<input type="text" name="keyword" id="keyword"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit"  name="Submit" class="btn_grey" value="查询"  size="50" onClick="return check(myform)"></td>
+	</tr>
+	</table>
+</form>
+</center>
+<br>
+<br>
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>参考文献</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.ArticalTitle}</td>
+                    </tr>
+                    {/foreach}
+</table>
+</body>
+</html>

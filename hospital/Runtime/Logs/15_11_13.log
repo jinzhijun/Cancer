@@ -1,0 +1,57 @@
+[ 2015-11-13T10:29:18+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head.html
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:31:24+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head.html
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:31:25+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head.html
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:31:26+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head.html
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:31:28+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head.html
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:31:33+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/head
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Index/html.html
+
+[ 2015-11-13T10:39:01+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/login
+ERR: 非法操作:login
+
+[ 2015-11-13T10:55:19+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/
+ERR: 非法操作:index
+
+[ 2015-11-13T11:04:58+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/Manager/login.html
+ERR: 非法操作:Manager
+
+[ 2015-11-13T11:05:28+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/Manager/login.html
+ERR: 非法操作:Manager
+
+[ 2015-11-13T11:08:06+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/%7B__MODULE__%7D/Manager/head.html
+ERR: 非法操作:{__MODULE__}
+
+[ 2015-11-13T11:08:25+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/__MODULE__/Manager/head.html
+ERR: 非法操作:__MODULE__
+
+[ 2015-11-13T11:08:58+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/head.html
+ERR: 非法操作:head
+
+[ 2015-11-13T11:17:23+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/head.html
+ERR: 非法操作:head
+
+[ 2015-11-13T11:17:24+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Index/__MODULE__/Manager/head.html
+ERR: 非法操作:__MODULE__
+
+[ 2015-11-13T11:17:25+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/head.html
+ERR: 非法操作:head
+
+[ 2015-11-13T17:02:51+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/logout
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Manager/index.html
+
+[ 2015-11-13T17:26:00+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Genes/biomarker_delete/newIdDelet/1
+ERR: 非法操作:biomarker_delete
+
+[ 2015-11-13T18:07:05+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Genes/biomarker_xiugai/genes_id/127
+ERR: Think\Model:talbe方法不存在！
+

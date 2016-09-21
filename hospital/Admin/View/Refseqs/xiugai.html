@@ -1,0 +1,95 @@
+<html>
+<head>
+	<link href="{$smarty.const.Admin_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+		.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+	<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：参考序列-》修改参考序列</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+<input type="hidden" name="id" value="{$info.ID}"/>
+	<table class="table_a" border="1" width="100%">
+	<tr><td align="right">Gene:</td><td><select name="Gene" value="{$info.Gene}">
+		<option value="0">-----------------请选择------------------</option>
+                
+                <option value="{$info.Gene}" selected="selected">{$info.Gene}</option>
+                
+                {foreach $info_A as $k => $v}
+                {if {$v.Gene}!=""}
+                <option value="{$v.Gene}">{$v.Gene}</option>
+                {/if}
+                {/foreach}
+                
+		</td>
+		<td align="right">Accession:</td><td><input type="text" name="Accession" value="{$info.Accession}"></td></tr>
+	<tr><td align="right">Accession Version:</td><td><input type="text" name="AccessionVersion" value="{$info.AccessionVersion}"></td><td align="right">Exons Start:</td><td><input type="text" name="ExonsStart" value="{$info.ExonsStart}"></td></tr>
+	<tr><td align="right">Exons Star:</td><td><input type="text" name="ExonsStar" value="{$info.ExonsStar}"></td><td align="right">Exons End:</td><td><input type="text" name="ExonsEnd" value="{$info.ExonsEnd}"></td></tr>
+	<tr><td align="right">CDS Start:</td><td><input type="text" name="CDSstart" value="{$info.CDSstart}"></td><td align="right">CDS End:</td><td><input type="text" name="CDSend" value="{$info.CDSend}"></td></tr>
+	<tr><td align="right">Sequence:</td><td><textarea name="Sequence" cols="50" rows="10">{$info.Sequence}</textarea></td><td>&nbsp;</td></tr>
+	<tr>
+	<td align="right">Last Updated:</td><td><input type="text" name="LastUpdated" value="{$info.LastUpdated}" readonly="readonly"></td><td  align="right">Operator:</td><td><input type="text" name="Operator" value="{$info.Operator}" readonly="readonly"></td>
+</tr>
+</table>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+<!--	<input type="submit"  name="Submit2" value="Close" onClick="history.go(-1)">-->
+	</td>
+</tr>
+</form>
+<hr/>
+
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.gene.value==""){
+			alert("请输入gene！");form.gene.focus();return false;
+		}
+		if(form.accession.value==""){
+			alert("请输入accession！");form.accession.focus();return false;
+		}
+		if(form.accessionversion.value==""){
+			alert("请输入accession version！");form.accessionversion.focus();return false;
+		}
+		if(form.exonsstart.value==""){
+			alert("请输入exons start！");form.exonsstart.focus();return false;
+		}
+		if(form.exonsstartaminoacid.value==""){
+			alert("请输入exons start aminoacid！");form.exonsstartaminoacid.focus();return false;
+		}
+		if(form.exonsend.value==""){
+			alert("请输入exons end！");form.exonsend.focus();return false;
+		}
+		if(form.cdsstart.value==""){
+			alert("请输入cds start！");form.cdsstart.focus();return false;
+		}
+		if(form.cdsend.value==""){
+			alert("请输入cds end！");form.cdsend.focus();return false;
+		}
+		if(form.sequence.value==""){
+			alert("请输入sequence！");form.sequence.focus();return false;
+		}
+form.submit();
+}
+</script>
+
+</font>
+</body>
+</html>

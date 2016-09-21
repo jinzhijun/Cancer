@@ -1,0 +1,134 @@
+<html>
+<head>
+    <link href="{$smarty.const.Admin_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+        .div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+        <div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：疾病药物关联分析-》添加疾病药物关联分析</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+    <table class="table_a" border="1" width="100%">
+     <tr><td align="right">MeSH ID:</td><td><input type="text" name="MeSHID" value="{$info.MeSHID}"></td></tr>
+    <tr>
+        <td align="right">Disease Name:</td><td><input type="text" name="DiseaseName" value="{$info.DiseaseName}"></td>
+        <td align="right">Disease Stage:</td>
+        <td><select name="DiseaseStage">
+             <option value="0">----------请选择-----------</option>
+                {foreach $info_B as $k => $v}
+                {if {$v.DiseaseStage} !=""}
+                <option value="{$v.DiseaseStage}">{$v.DiseaseStage}</option>
+                {/if}
+                 {/foreach}
+                }
+            </select>
+        </td>
+    </tr>
+     <tr><td align="right">Drugbank ID:</td><td><input type="text" name="DrugbankID" value="{$info.DrugbankID}"></td></tr>
+    <tr>
+        <td align="right">Drug Name:</td><td><input type="text" name="DrugName" value="{$info.DrugName}"></td>
+        <td align="right">Drug Stage:</td>
+        <td>
+        <select name="DrugStage">
+             <option value="0">----------------请选择-------------</option>
+                {foreach $info_A as $k => $v}
+                {if {$v.DrugStage} !=""}
+                <option value="{$v.DrugStage}">{$v.DrugStage}</option>
+                {/if}
+                 {/foreach}
+                }
+            </select>
+        </td>
+    </tr>
+    <tr><td align="right">Approved Year:</td>
+    <td>
+    <select name="ApprovedYear">
+        <option value="0">------------------请选择-------------</option>
+                {foreach $info as $k => $v}
+                 {if {$v.ApprovedYear} !=""}
+                <option value="{$v.ApprovedYear}">{$v.ApprovedYear}</option>
+                {/if}
+                 {/foreach}
+                }
+        </select>
+        </td>
+        <td align="right">Started Year:</td>
+        <td>
+        <select name="StartedYear">
+         <option value="0">----------------请选择---------------</option>
+                {foreach $info as $k => $v}
+                {if {$v.StartedYear} !=""}
+                <option value="{$v.StartedYear}">{$v.StartedYear}</option>
+                {/if}
+                 {/foreach}
+                }
+        </select>
+        </td>
+    </tr>
+    <tr><td align="right">Drug Stage Description:</td><td><textarea name="DrugStageDescription" cols="60" rows="3">{$info.DrugStageDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td align="right">Association Description:</td><td><textarea name="AssociationDescription" cols="60" rows="3">{$info.AssociationDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td align="right">Clinical Application Description:</td><td><textarea name="ClinicalApplicationDescription" cols="60" rows="3">{$info.ClinicalApplicationDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr>
+    <td align="right">Last Updated:</td><td><input type="text" name="LastUpdated" value="{$smarty.now|date_format:'%Y-%m-%d %H:%M'}" readonly="readonly"></td><td  align="right">Operator:</td><td><input type="text" name="Operator" value="{$smarty.session.admin_name}" readonly="readonly"></td>
+</tr>
+        <tr>
+    <td align="center">
+    <input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+    
+    </td>
+</tr>
+</table>
+</form>
+<hr/>
+
+
+<script language="javascript">
+    function check(form){               //验证表单是否为空
+        if(form.diseasename.value==""){
+            alert("请输入diseasename！");form.diseasename.focus();return false;
+        }
+    
+        if(form.drugname.value==""){
+            alert("请输入drugname！");form.drugname.focus();return false;
+        }
+        if(form.drugstage.value==""){
+            alert("请输入drugstage！");form.drugstage.focus();return false;
+        }
+    
+        if(form.drugstagedescription.value==""){
+            alert("请输入drugstagedescription！");form.drugstagedescription.focus();return false;
+        }
+        if(form.accociationdescription.value==""){
+            alert("请输入accociationdescription！");form.accociationdescription.focus();return false;
+        }
+        if(form.clinicalapplocationdescription.value==""){
+            alert("请输入clinicalapplocationdescription！");form.clinicalapplocationdescription.focus();return false;
+        }
+        if(form.lastupdated.value==""){
+            alert("请输入lastupdated！");form.lastupdated.focus();return false;
+        }
+        if(form.operator.value==""){
+            alert("请输入operator！");form.operator.focus();return false;
+        }
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

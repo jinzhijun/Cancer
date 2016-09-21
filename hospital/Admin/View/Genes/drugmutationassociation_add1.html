@@ -1,0 +1,54 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加药物突变相关分析信息</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr><td align="right">Drug Name:</td>
+		<td><select name="drugname" >
+		<option>Dexamethasone</option>
+		<option></option>
+		</select>
+		</td>
+	</tr>
+	<tr><td align="right">Mutation:</td>
+		<td><textarea name="mutation" cols="60" rows="3"></textarea>
+		</td>
+	</tr>
+	<tr><td align="right">Biomarker Type:</td>
+		<td><select name="biomarkertype" >
+		<option>Drug Sensitivity Biomarker</option>
+		<option>                          </option>
+		</select>
+		</td>
+	</tr>
+	<tr><td align="right">Reference:</td>
+		<td><input type="text" name="reference" id="reference" >Reference id is separated by "."</td>
+	</tr>
+	<tr><td align="right">Medication Guide:</td>
+		<td><textarea name="medicationguide" cols="60" rows="3"></textarea></td>
+	</tr>
+	<tr><td align="right">Medication Guide(English):</td>
+		<td><textarea name="medicationguideenglish" cols="60" rows="3"></textarea></td>
+	</tr>
+	<tr><td align="right">Significance of Gene Testing(Chinese):</td><td><textarea name="sogtchinese" cols="60" rows="3"></textarea></td></tr>
+        <tr><td align="right">Description:</td><td><textarea name="description" cols="60" rows="3"></textarea></td></tr>
+	<tr>
+	<td>Last updated:<input type="text" name="lastupdated"></td><td>Operator:<input type="text" name="operator" ></td>
+	</tr>
+</table>
+</form>
+<hr/>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="">
+	
+	</td>
+</tr>
+<center>Copyright @Academy Of Military Medical Sciences</center>
+</font>
+</body>
+</html>

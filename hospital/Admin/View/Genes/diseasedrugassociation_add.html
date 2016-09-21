@@ -1,0 +1,83 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加疾病药物关联分析信息</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}/diseasedrugassociation_add1">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+		<td align="right">Disease Name:</td><td><input type="text" name="diseasename" value="{$info.DiseaseName}"></td>
+		<td align="right">Disease Stage:</td>
+		<td><select name="diseasestage" value="{$info.DiseaseStage}">
+			<option>&nbsp;</option>
+			<option>&nbsp;</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Drug Name:</td><td><input type="text" name="drugname" value="{$info.DrugName}"></td>
+		<td align="right">Drug Stage:</td><td><select name="drugstage" value="{$info.DrugStage}">
+			<option>Approved</option>
+			<option>        </option>
+			</select>
+		</td>
+	</tr>
+	<tr><td align="right">Approved Year:</td><td><select name="approvedyear" value="{$info.ApprovedYear}">
+		<option>   </option>
+		<option>   </option>
+		</select>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">Drug Stage Description:</td><td><textarea name="drugstagedescription" cols="60" rows="3">{$info.DrugStageDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Association Description:</td><td><textarea name="associationdescription" cols="60" rows="3">{$info.AssociationDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Clinical Application Description:</td><td><textarea name="clinicalapplicationdescription" cols="60" rows="3">{$info.ClinicalApplicationDescription}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr>
+	<td align="right">Last updated:</td><td><input type="text" name="lastipdate" value="{$info.LastUpdate}"></td><td align="right">Operator:</td><td><input type="text" name="operator" value="{$info.Operator}"></td>
+	</tr>
+        <tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.diseasename.value==""){
+			alert("请输入diseasename！");form.diseasename.focus();return false;
+		}
+	
+		if(form.drugname.value==""){
+			alert("请输入drugname！");form.drugname.focus();return false;
+		}
+		if(form.drugstage.value==""){
+			alert("请输入drugstage！");form.drugstage.focus();return false;
+		}
+	
+		if(form.drugstagedescription.value==""){
+			alert("请输入drugstagedescription！");form.drugstagedescription.focus();return false;
+		}
+		if(form.accociationdescription.value==""){
+			alert("请输入accociationdescription！");form.accociationdescription.focus();return false;
+		}
+		if(form.clinicalapplocationdescription.value==""){
+			alert("请输入clinicalapplocationdescription！");form.clinicalapplocationdescription.focus();return false;
+		}
+		if(form.lastupdated.value==""){
+			alert("请输入lastupdated！");form.lastupdated.focus();return false;
+		}
+		if(form.operator.value==""){
+			alert("请输入operator！");form.operator.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

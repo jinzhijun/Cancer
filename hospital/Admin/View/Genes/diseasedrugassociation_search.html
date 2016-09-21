@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<p><b>疾病药物关联分析查询</b></p>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/diseasedrugassociation_search1">
+	<tr>
+		<td align="right">Disease Name</td><td><input type="text" name="diseasename" id="diseasename" size="25"></td>
+		<td align="right">&nbsp;Drug Name</td><td><input type="text" name="drugname" id="drugname" size="25"></td>
+                <td>&nbsp;<input type=submit name="Submit" value="Search" onclick=""></td>
+		
+	</tr>
+</form>
+</table>
+<br>
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>Disease Name</td>
+                        <td>Disease Stage</td>
+                        <td>Drug Name</td>
+                        <td>Drug Stage</td>
+                        <td>Started Year</td>
+                        <td>Approved Year</td>
+                        <td>Drug Stage Description</td>
+                        <td>Association Description</td>
+                        <td>Clinical Application Description</td>
+                        <td>Operator</td>
+                        <td>Last Update</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.DiseaseName}</td>
+                        <td>{$v.DiseaseStage}</a></td>
+                        <td>{$v.DrugName}</td>
+                        <td>{$v.DrugStage}</td>
+                        <td>{$v.StartedYear}</td>
+                        <td>{$v.ApprovedYear}</td>
+                        <td>{$v.DrugStageDescription}</td>
+                        <td>{$v.AssociationDescription}</td>
+                        <td>{$v.ClinicalApplicationDescription}</td>
+                         <td>{$v.Operator}</td>
+                        <td>{$v.LastUpdate}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/diseasedrugassociation_xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/diseasedrugassociation_delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    <tr>
+                      <td colspan="100" style="text-align: center;">
+                            {$pagelist}
+                      </td>
+                    </tr>
+</table>
+</font>
+</body>
+</html>

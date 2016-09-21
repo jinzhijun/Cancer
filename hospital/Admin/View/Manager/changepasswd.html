@@ -1,0 +1,44 @@
+<html>
+    <head>
+</head>
+<body>
+    <form action="{$smarty.const.__CONTROLLER__}/updatepassword" method="post" name="form1" id="myform">
+
+        <table width="98%" border="0" cellpadding="4" cellspacing="1" class="table">
+            <tr class="table_title">
+                <td colspan="4" align="left"><h2>修改密码</h2></td>
+                <td><input type="hidden" name="adminid" value="{$smarty.session.admin_id}"></td>
+            </tr>
+            <tr class="">
+                <td width="100">用 户 名：</td>
+                <td align='left' name="username" id="username" >{$smarty.session.admin_name}</td>
+            </tr>
+            <tr class="tr rt">
+                <td width="100">旧 密 码：</td>
+                <td colspan="3" class="lt">
+                    <input type="password" name="oldpassword" id="oldpassword" style="width:200px" value="">
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td width="100">密　　码：</td>
+                <td colspan="3" class="lt">
+                    <input type="password" name="password" id="password" style="width:200px" value="">
+                </td>
+            </tr>
+            <tr class="tr rt">
+                <td width="100">确认密码：</td>
+                <td colspan="3" class="lt">
+                    <input type="password" name="repassword" id="repassword" style="width:200px" value="">
+                </td>
+            </tr>
+
+            <tr class="tr lt">
+                <td colspan="4">
+
+                    <input class="bginput" type="submit" name="dosubmit" value="修 改" >
+
+                    <input class="bginput" type="button" onclick="javascript:history.back( - 1);" value="返 回" ></td>
+            </tr>
+        </table>
+    </form>
+</html>

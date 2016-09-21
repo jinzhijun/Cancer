@@ -1,0 +1,6 @@
+[ 2015-11-12T13:35:18+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Genes/biomarkerprimer_xiugai/genes_id/Glioma
+ERR: 非法操作:biomarkerprimer_xiugai
+
+[ 2015-11-12T16:25:24+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Genes/disease_add.php
+ERR: 非法操作:disease_add.php
+

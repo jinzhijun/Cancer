@@ -1,0 +1,243 @@
+[ 2015-11-15T11:58:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T12:37:44+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement_search.php
+ERR: 非法操作:medicalrecordmanagement_search.php
+
+[ 2015-11-15T12:38:09+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement_search.php
+ERR: 非法操作:medicalrecordmanagement_search.php
+
+[ 2015-11-15T12:45:05+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement.html
+ERR: Syntax Error in template "D:/xampp/htdocs/Cancer/hospital/Home/View\Works\medicalrecordmanagement.html"  on line 8 "function check1(form){//验证表单是否为空"  - Unexpected "/", expected one of: "identifier"
+
+[ 2015-11-15T12:45:07+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement.html
+ERR: Syntax Error in template "D:/xampp/htdocs/Cancer/hospital/Home/View\Works\medicalrecordmanagement.html"  on line 8 "function check1(form){//验证表单是否为空"  - Unexpected "/", expected one of: "identifier"
+
+[ 2015-11-15T12:45:08+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement.html
+ERR: Syntax Error in template "D:/xampp/htdocs/Cancer/hospital/Home/View\Works\medicalrecordmanagement.html"  on line 8 "function check1(form){//验证表单是否为空"  - Unexpected "/", expected one of: "identifier"
+
+[ 2015-11-15T12:46:34+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement.html
+ERR: Syntax Error in template "D:/xampp/htdocs/Cancer/hospital/Home/View\Works\medicalrecordmanagement.html"  on line 8 "function check1(form1){//验证表单是否为空"  - Unexpected "/", expected one of: "identifier"
+
+[ 2015-11-15T12:47:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/medicalrecordmanagement.html
+ERR: Syntax Error in template "D:/xampp/htdocs/Cancer/hospital/Home/View\Works\medicalrecordmanagement.html"  on line 8 "function check1(form){//验证表单是否为空"  - Unexpected "/", expected one of: "identifier"
+
+[ 2015-11-15T13:33:18+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T13:33:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T13:33:20+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T13:33:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.html
+ERR: 非法操作:queryreferencedata
+
+[ 2015-11-15T13:33:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T13:33:22+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.html
+ERR: 非法操作:queryreferencedata
+
+[ 2015-11-15T13:33:22+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T13:33:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T13:33:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T13:33:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T14:59:50+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T14:59:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T14:59:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T14:59:55+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.html
+ERR: 非法操作:treatmentproposal
+
+[ 2015-11-15T15:15:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T15:21:07+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T15:21:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.html
+ERR: 非法操作:viewreport
+
+[ 2015-11-15T15:25:14+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:29:18+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:29:18+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:29:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.html
+ERR: 非法操作:queryreferencedata
+
+[ 2015-11-15T15:29:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:29:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:29:24+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T15:29:25+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.html
+ERR: 非法操作:queryreferencedata
+
+[ 2015-11-15T15:29:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.html
+ERR: 非法操作:queryreferencedata
+
+[ 2015-11-15T15:29:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:29:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:32:33+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:32:35+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T15:32:35+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:32:36+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:32:37+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:33:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:33:28+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:33:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:35:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:35:22+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:35:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:35:24+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:35:25+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T15:35:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:35:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:35:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:47:18+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:47:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:47:20+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:47:20+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:47:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T15:47:21+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:47:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:47:25+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:47:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:47:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:47:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:47:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:47:28+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:51:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:52:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T15:52:14+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:52:14+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T15:52:15+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T15:52:16+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T15:52:16+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T15:52:17+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T17:36:22+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T17:36:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T17:36:24+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-15T17:36:25+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-15T17:36:25+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-15T17:36:26+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-15T17:36:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-15T23:30:58+08:00 ] ::1 /Cancer/hospital/index.php/Home/login/logout.php
+ERR: 无法加载控制器:Login
+

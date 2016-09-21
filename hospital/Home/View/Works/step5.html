@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+<!--        <meta charset="UTF-8">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>最终结果如下：</h1>
+        <p>{$info[illnumber]}</p>
+        <table>
+        {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.illnumber}</font></td>
+                        <td>{$v.illhistory}</td>
+                        <td>{$v.illreport}</a></td>
+
+                        <td><a href="{$smarty.const.__CONTROLLER__}/biomarker_xiugai/genes_id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/biomarker_delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+        </table>
+    </body>
+</html>

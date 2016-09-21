@@ -1,0 +1,12 @@
+@charset "utf-8";
+*{ margin:0px auto;padding:0;list-style-type:none; }
+a,img{ border:0; }
+body{ font:12px/180% Arial, Helvetica, sans-serif, "新宋体"; }
+
+.tab1{ cellpadding-top:0px;width:1000px;border-top:#cccccc solid 1px;border-bottom:#cccccc solid 1px; }
+.menu{ margin-top:0px;height:28px;border-right:#cccccc solid 1px; }
+.menu li{ float:left;width:99px;text-align:center;line-height:28px;height:28px;cursor:pointer;border-left:#cccccc solid 1px;color:#666;font-size:14px;overflow:hidden;background:#E0E2EB; }
+.menu li.off{ background:#FFFFFF;color:#336699;font-weight:bold; }
+
+.menudiv{ margin-top:0px;height:auto;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe }
+.menudiv div{ margin-top:0px;padding:15px;line-height:28px; }

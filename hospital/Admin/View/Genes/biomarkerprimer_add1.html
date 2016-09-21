@@ -1,0 +1,114 @@
+<html>
+<body>
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" >
+	<tr><td>
+	<font size="4" color="black">
+		<p><b>Biomarker Primer Details</b></p>
+	</font>
+	</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	
+	<tr><td align="right">Disease Name:</td><td><input type="text" name="diseasename"></td><td align="right">Product Length:</td><td><input type="text" name="productlength"></td></tr>
+	<tr><td align="right">Gene Symble:</td><td><input type="text" name="genesymble"></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Gene ID:</td><td><input type="text" name="geneid"></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Primer Description:</td><td><textarea cols="50" rows="5" name="primerdescription"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>
+	<font size="4" color="black">
+		<p><b>Forward Primer</b></p>
+	</font></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">
+	Template Strand:</td><td><select name="fortemplatestrand">
+	<option>Plus</option>
+	<option>Minus</option>
+	</select></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Start:</td><td><input type="text" name="forstart"></td><td align="right">Stop:</td><td><input type="text" name="forstop"></td></tr>
+	<tr><td align="right">Tim:</td><td><input type="text" name="fortim"></td><td align="right">GC%:</td><td><input type="text" name="forgc"></td></tr>
+	<tr><td align="right">Primer Sequence:</td><td><textarea cols="50" rows="3" name="forprimersequence"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td>
+	<font size="4" color="black">
+		<p><b>Reverse Primer</b></p>
+	</font></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">
+	Template Strand:</td><td><select name="revtemplatestrand">
+		<option>Plus</option>
+		<option>Minus</option>
+	</select>
+	</td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">Start:</td><td><input type="text" name="revstart"></td><td align="right">Stop:</td><td><input type="text" name="revstop"></td></tr>
+	<tr><td align="right">Tim:</td><td><input type="text" name="revtim"></td><td align="right">GC%:</td><td><input type="text" name="revgc"></td></tr>
+	<tr>
+		<td align="right">Primer Sequence:</td><td><textarea cols="30" rows="3" name="revprimersequence">
+	</textarea></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+</table>
+</form>
+<hr/>
+	<tr><td align="center">
+	<input type=submit name="Submit"  class="btn_grey" value="Save" onClick="return check(myform)">
+<!--	<input type=submit name="Submit"  value="Close" onClick="history.go(-1)"></td>-->
+	</tr>
+</center>
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.biodiseasename.value==""){
+			alert("请输入bio_diseasename！");form.biodiseasename.focus();return false;
+		}
+		if(form.bioproductlength.value==""){
+			alert("请输入bio_productlength！");form.bioproductlength.focus();return false;
+		}
+		if(form.biogenesymble.value==""){
+			alert("请输入bio_genesymble！");form.biogenesymble.focus();return false;
+		}
+		if(form.bioprimerdescription.value==""){
+			alert("请输入bio_primerdescription！");form.bioprimerdescription.focus();return false;
+		}
+		if(form.fortemplatestrand.value==""){
+			alert("请输入for_templatestrand！");form.fortemplatestrand.focus();return false;
+		}
+		if(form.forstart.value==""){
+			alert("请输入for_start！");form.forstart.focus();return false;
+		}
+		if(form.forstop.value==""){
+			alert("请输入for_stop！");form.forstop.focus();return false;
+		}
+		if(form.fortim.value==""){
+			alert("请输入for_tim！");form.fortim.focus();return false;
+		}
+		if(form.forgc.value==""){
+			alert("请输入for_gc%！");form.forgc.focus();return false;
+		}
+		if(form.forprimersequence.value==""){
+			alert("请输入for_primersequence！");form.forprimersequence.focus();return false;
+		}
+		if(form.revtemplatestrand.value==""){
+			alert("请输入rev_templatestrand！");form.revtemplatestrand.focus();return false;
+		}
+		if(form.revstart.value==""){
+			alert("请输入rev_start！");form.revstart.focus();return false;
+		}
+		if(form.revstop.value==""){
+			alert("请输入rev_stop！");form.revstop.focus();return false;
+		}
+		if(form.revtim.value==""){
+			alert("请输入rev_tim！");form.revtim.focus();return false;
+		}
+		if(form.revgc.value==""){
+			alert("请输入rev_gc%！");form.revgc.focus();return false;
+		}
+		if(form.revprimersequence.value==""){
+			alert("请输入rev_primersequence！");form.revprimersequence.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

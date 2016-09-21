@@ -1,0 +1,58 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加参考文献信息</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+	<td align="right">Article Title:</td><td><input type="text" name="articletitle"></td>
+	<td align="right">Category:</td><td><select name="category">
+			<option>Disease Diagnosis</option>
+			<option>                 </option>
+			</select></td>
+	</tr>
+	<tr>
+	<td align="right">Disease Type:</td><td><input type="text" name="diseasetype"></td>
+	<td align="right">author:</td><td><input type="text" name="author"></td>
+	</tr>
+	<tr>
+	<td align="right">Drug:</td><td><input type="text" name="drug" value="{$info.Drug}"></td>
+	<td align="right">Biomarker:</td><td><input type="text" name="biomarker" value="{$info.Biomarker}"></td>
+	</tr>
+	<tr>
+	<td align="right">Year:</td><td><select name="year">
+		<option></option>
+		<option></option>
+	</select></td>
+	
+	</tr>
+	<tr>
+	<td align="rigth">Reference Type:</td><td><select name="referencetype">
+		<option>Web Link</option>
+		<option></option>
+	</select>
+	</td>
+	<td align="right">PubmedID:</td><td><input type="text" name="pubmedid"></td>
+	</tr>
+	<tr>
+	
+	
+	<td align="right">Journal:</td><td><input type="text" name="journal" value="{$info.Journal}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	
+</table>
+</form>
+<hr/>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</font>
+</body>
+</html>

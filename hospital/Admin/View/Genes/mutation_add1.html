@@ -1,0 +1,46 @@
+<html>
+<head><title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body align="left">
+<tr><td>
+<font size="4" color="black">
+<p><b>添加突变信息</b></p>
+</font>
+</td></tr>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr><td align="right">Gene ID:</td><td><input type="text" name="geneid" value="{$info.GeneID}"></td><td>&nbsp;</td></tr>
+	<tr><td align="right">Gene Name:</td><td><input type="text" name="gene" ></td>
+		<td align="right">Category:</td><td><select name="category" >
+			<option>point mutation</option>
+			<option>insertion</option>
+			<option>deletion</option>
+			<option>overexpress</option>
+			<option>amplification</option>
+			<option>transloction</option>
+			<option>inversion</option>
+			<option>reverse inversion</option>
+			<option>methylation</option>
+			<option>MSI</option>
+			<option>CTC</option>
+			</select>
+		</td></tr>
+	<tr><td align="right">Accession:</td><td><input type="text" name="accession" ></td><td align="right">Accession Version:</td><td><input type="text" name="accessionversion" ></td></tr>
+	<tr><td align="right">Description:</td><td><textarea name="description" cols="50" rows="3"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Operator:</td><td><input type="text" name="operator" ></td><td align="right">Last Updated:</td><td><input type="text" name="lastupdated" ></td></tr>
+<tr>
+	<td align="center">
+	<input type=submit name="Submit" class="btn_grey" value="Save" onclick="">
+	
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+
+</font>
+</body>
+</html>

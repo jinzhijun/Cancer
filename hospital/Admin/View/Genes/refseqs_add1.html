@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<font size="4" color="black">
+	<p><b>添加参考序列</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr><td align="right">Gene:</td><td><select name="gene">
+		<option>1p19q</option>
+		<option>ROS1</option>
+		</td>
+		<td align="right">Accession:</td><td><input type="text" name="accession"></td></tr>
+	<tr><td align="right">Accession Version:</td><td><input type="text" name="accessionversion"></td><td align="right">Exons Start:</td><td><input type="text" name="exonsstart"></td></tr>
+	<<tr><td align="right"></td><td></td><td align="right">Exons End:</td><td><input type="text" name="exonsend"></td></tr>
+	<tr><td align="right">CDS Start:</td><td><input type="text" name="cdsstart"></td><td align="right">CDS End:</td><td><input type="text" name="cdsend"></td></tr>
+	<tr><td align="right">Sequence:</td><td><textarea name="sequence" cols="50" rows="2"></textarea></td><td>&nbsp;</td></tr>
+</table>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="">
+<!--	<input type="submit"  name="Submit2" value="Close" onClick="history.go(-1)">-->
+	</td>
+</tr>
+</form>
+<hr/>
+
+<center>Copyright @Academy Of Military Medical Sciences</center>
+</font>
+</body>
+</html>

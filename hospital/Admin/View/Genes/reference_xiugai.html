@@ -1,0 +1,98 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}/reference_update">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<input type="hidden" name="id" value="{$info.ID}"/>
+	<tr>
+	<td align="right">Article Title:</td><td><input type="text" name="articletitle" value="{$info.ArticalTitle}"></td>
+	<td align="right">Category:</td><td><select name="category" value="{$info.Category}">
+			<option>Disease Diagnosis</option>
+			<option>                 </option>
+			</select></td>
+	</tr>
+	<tr>
+	<td align="right">Disease Type:</td><td><input type="text" name="diseasetype" value="{$info.DiseaseType}"></td>
+	<td align="right">Author:</td><td><input type="text" name="author" value="{$info.Author}"></td>
+	</tr>
+	<tr>
+	<td align="right">Drug:</td><td><input type="text" name="drug" value="{$info.Drug}"></td>
+	<td align="right">Biomarker:</td><td><input type="text" name="biomarker" value="{$info.Biomarker}"></td>
+	</tr>
+	<tr>
+	<td align="right">Year:</td><td><select name="year" value="{$info.Year}">
+		<option>2012</option>
+		<option>2013</option>
+                <option>2014</option>
+	</select></td>
+	
+	</tr>
+	<tr>
+	<td align="rigth">Reference Type:</td><td><select name="referencetype" value="{$info.ReferenceType}">
+		<option>Web Link</option>
+		<option></option>
+	</select>
+	</td>
+	<td align="right">PubmedID:</td><td><input type="text" name="pubmedid" value="{$info.PubmedID}"></td>
+	</tr>
+	<tr>
+
+
+	<td align="right">Journal:</td><td><input type="text" name="journal" value="{$info.Journal}"></td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	
+        <tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.articletitle.value==""){
+			alert("请输入Article Title！");form.articletitle.focus();return false;
+		}
+		if(form.category.value==""){
+			alert("请输入Category！");form.category.focus();return false;
+		}
+		if(form.diseasetype.value==""){
+			alert("请输入Disease Type！");form.diseasetype.focus();return false;
+		}
+		if(form.author.value==""){
+			alert("请输入Author！");form.author.focus();return false;
+		}
+		if(form.description.value==""){
+			alert("请输入Description！");form.description.focus();return false;
+		}
+		if(form.year.value==""){
+			alert("请输入Year！");form.year.focus();return false;
+		}
+		if(form.published.value==""){
+			alert("请输入Published！");form.published.focus();return false;
+		}
+		if(form.referencetype.value==""){
+			alert("请输入Reference Type！");form.referencetype.focus();return false;
+		}
+		if(form.pubmedid.value==""){
+			alert("请输入PubmedID！");form.pubmedid.focus();return false;
+		}
+		if(form.link.value==""){
+			alert("请输入Link！");form.link.focus();return false;
+		}
+		if(form.keywords.value==""){
+			alert("请输入Keywords！");form.keywords.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

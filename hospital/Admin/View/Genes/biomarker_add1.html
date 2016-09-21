@@ -1,0 +1,52 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加生物标记</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+    
+	<table width="700" height="350" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr><td align="right">Gene ID:</td><td><input type="text" name="geneid"></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Gene Symbol:</td><td><input type="text" name="genesymbol"></td><td align="right">Synonyms:</td><td><input type="text" name="synonyms"></td></tr>
+	<tr><td align="right">Gene Type:</td><td><input type="text" name="genetype"></td><td align="right">Chromosome:</td><td><input type="text" name="chromosome"></td></tr>
+	<tr><td align="right">Strand:</td>
+		<td><select name="strand">
+			<option>+</option>
+			<option>-</option>
+		</select></td>
+	<td align="right">Start:</td><td><input type="text" name="start"></td>
+	</tr>
+	<tr>
+	<td  align="right">
+	End:</td><td><input type="text" name="end">
+	</td>
+	<td  align="right">
+	Category:</td><td>
+	<select name="category">
+	<option>Circulating Tumor Cell</option>
+	<option>                      </option>
+	<option>                      </option>
+	<option>                      </option>
+	<option>                      </option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td align="right">Last Updated:</td><td><input type="text" name="lastipdated"></td><td  align="right">Operator:</td><td><input type="text" name="operator"></td>
+</tr>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick=""></td>
+<!--	<td><input type="submit"  name="Submit2" value="Close" onClick="history.go(-1)">-->
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+
+<center>Copyright @Academy Of Military Medical Sciences</center>
+</font>
+</body>
+</html>

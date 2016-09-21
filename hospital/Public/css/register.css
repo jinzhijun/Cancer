@@ -1,0 +1,5 @@
+body{ font:normal 15px/1.5 Arial, Helvetica, Free Sans, sans-serif;color: #222;background:url(pattern.png);overflow-y:scroll;padding:60px 0 0 0; }
+#myform{ width:460px;border:1px solid #ccc;padding:3em;border-radius:3px;box-shadow:0 0 2px rgba(0,0,0,.2); }
+#comments{ width:350px;height:100px; }
+.span1{ width:200px;text-align:left;float:left }
+.span2{ float:left; }

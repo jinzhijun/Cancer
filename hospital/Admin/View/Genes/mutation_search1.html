@@ -1,0 +1,95 @@
+<html>
+<title></title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<p><b>生物标记突变查询</b></p>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<fonr size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__SELF__}"
+	<tr>
+		<td align="left">Gene Name<input type="text" name="genename">
+			
+		</td>
+		<td>&nbsp;<input type="submit" name="Submit" value="Search" onclick="submit()">
+		</td>
+		
+	</tr>
+</form>
+</table>
+<br><br>
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>Gene ID</td>
+                        <td>Gene Name</td>
+                        <td>Category</td>
+                        <td>Accession</td>
+                        <td>Accession Version</td>
+                        <td>Description</td>
+                        <td>Gene</td>
+                        <td>DNA source</td>
+                        <td>cDNA position</td>
+                         <td>Chrom</td>
+                        <td>Exon</td>
+                        <td>Codons</td>
+                        <td>CDS mutation syntax</td>
+                        <td>Amino Acid substitution</td>
+                        <td>hg position</td>
+                        <td>RefSNP</td>
+                        <td>ref seq  at pos</td>
+                        <td>alternative seq</td>
+                         <td>Drug Sensitivity</td>
+                        <td>Drug Risk Sensitivity</td>
+                        <td>Target Drugs</td>
+                        <td>Associated Disease Name</td>
+                        <td>Reference Link</td>
+                        <td>Mutation description</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                          <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.GeneID}</td>
+                        <td>{$v.GeneName}</a></td>
+                        <td>{$v.Category}</td>
+                        <td>{$v.Accession}</td>
+                        <td>{$v.AccessionVersion}</td>
+                        <td>{$v.Description}</td>
+                        <td>{$v.Gene}</td>
+                        <td>{$v.DNAsource}</td>
+                        <td>{$v.cDNApostion}</td>
+                         <td>{$v.Chrom}</td>
+                        <td>{$v.Exon}</a></td>
+                        <td>{$v.Codons}</td>
+                        <td>{$v.CDSmutationSyntax}</td>
+                        <td>{$v.AminoAcidSubstitution}</td>
+                        <td>{$v.HgPosition}</td>
+                        <td>{$v.RefSNP}</td>
+                        <td>{$v.RefSeqatpos}</td>
+                        <td>{$v.AlternativeSeq}</td>
+                         <td>{$v.DrugSensitivity}</td>
+                        <td>{$v.DrugRiskSensitivity}</a></td>
+                        <td>{$v.TargetDrugs}</td>
+                        <td>{$v.AssociatedDiseaseName}</td>
+                        
+                        <td>{$v.ReferenceLink}</td>
+                        <td>{$v.MutationDescription}</td>
+                        
+                        <td><a href="{$smarty.const.__CONTROLLER__}/mutation_xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/mutation_delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    
+</table>
+</body>
+</html>

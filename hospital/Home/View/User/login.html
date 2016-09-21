@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+    http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{$smarty.const.Home_CSS_URL}/login.css"/>
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <center><img src="{$smarty.const.Home_IMG_URL}/cancer_head.png"></center>
+            </div>
+            <br>
+            <br>
+
+            <div id="main">
+                <center>
+                    <form action="{$smarty.const.__CONTROLLER__}/checklogin" method="post" id="myform">
+                        <span><center><h1><b>Login</b></h1></center></span>
+                        <span class="ll"></span><span><input type="text" class="username" name="username" value=""/></span><br><br>
+                        <span class="ll"></span><span><input type="password" class="password" name="password" value=""/></span><br/><br>
+                        <span class="ll"><span><span><input type="text" class="checkcode" name="checkcode" value=""/><span>
+                                        <span><img src="{$smarty.const.__CONTROLLER__}/verifyImg"  onclick="this.src = '{$smarty.const.__CONTROLLER__}/verifyImg/' + Math.random()" alt="" /></span>
+                                        <span><input type="submit" value="登录" class="login"><span><br><br>
+                                                <span><input type="button" value="注册" onclick="window.open('register.html')" class="register"></span>
+                    </form>
+
+                 </center>
+            </div>
+</div>
+</body>
+</html>

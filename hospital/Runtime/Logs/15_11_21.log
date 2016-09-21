@@ -1,0 +1,6 @@
+[ 2015-11-21T12:17:34+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/changepassword
+ERR: Unable to load template file 'tdocs\Cancer\ThinkPHP/Tpl/dispatch_jump.tpl'
+
+[ 2015-11-21T12:17:41+08:00 ] ::1 /Cancer/hospital/index.php/Admin/Manager/changepassword
+ERR: Unable to load template file 'tdocs\Cancer\ThinkPHP/Tpl/dispatch_jump.tpl'
+

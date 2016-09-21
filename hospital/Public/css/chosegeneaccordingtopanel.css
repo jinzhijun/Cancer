@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.list{
+	height:30px;
+	background-color:#DDDDDD;
+	border:1px solid white;
+}
+.gene1{width:100px;}
+.gene2{width:100px;}
+.gene3{width:150px;}
+.gene4{width:100px;}
+.gene5{width:180px;}
+.gene6{width:200px;}
+
+.ou{background-color:white;}
+

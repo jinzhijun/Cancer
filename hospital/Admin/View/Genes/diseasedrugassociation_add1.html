@@ -1,0 +1,51 @@
+<html>
+<body>
+<font size="4" color="black">
+	<p><b>添加疾病药物关联分析信息</b></p>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table border="0px" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+	<tr>
+		<td align="right">Disease Name:</td><td><input type="text" name="diseasename"></td>
+		<td align="right">Disease Stage:</td>
+		<td><select name="diseasestage">
+			<option>&nbsp;</option>
+			<option>&nbsp;</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">Drug Name:</td><td><input type="text" name="drugname"></td>
+		<td align="right">Drug Stage:</td><td><select name="drugstage">
+			<option>Approved</option>
+			<option>        </option>
+			</select>
+		</td>
+	</tr>
+	<tr><td align="right">Approved Year:</td><td><select name="approvedyear">
+		<option></option>
+		<option></option>
+		</select>
+		</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+	<tr><td align="right">Drug Stage Description:</td><td><textarea name="drugstagedescription" cols="60" rows="3"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Association Description:</td><td><textarea name="associationdescription" cols="60" rows="3"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Clinical Application Description:</td><td><textarea name="clinicalapplicationdescription" cols="60" rows="3"></textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr>
+	<td align="right">Last updated:</td><td><input type="text" name="lastupdate"></td><td align="right">Operator:</td><td><input type="text" name="operator"></td>
+	</tr>
+        <tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</table>
+</form>
+<hr/>
+
+</font>
+</body>
+</html>

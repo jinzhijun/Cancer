@@ -1,0 +1,249 @@
+<?php /* Smarty version Smarty-3.1.6, created on 2015-11-10 18:28:35
+         compiled from "D:/xampp/htdocs/Cancer/hospital/Home/View\User\register.html" */ ?>
+<?php /*%%SmartyHeaderCode:1135641415a1aa6b2-78160602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '2ee6850a5c7b8ae145781fc10cc36ad5aef80b56' => 
+    array (
+      0 => 'D:/xampp/htdocs/Cancer/hospital/Home/View\\User\\register.html',
+      1 => 1447151306,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1135641415a1aa6b2-78160602',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5641415a1d563',
+  'variables' => 
+  array (
+    'errorInfo' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5641415a1d563')) {function content_5641415a1d563($_smarty_tpl) {?><html>
+<head>
+<title>用户名注册</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="<?php echo @Home_CSS_URL;?>
+style.css"/>
+</head>
+<body>
+<!--<script type="text/javascript">
+
+//创建ajax引擎
+function getXmlHttpobject(){
+
+	var xmlHttpRequest;
+	//不同的浏览器获取对象xmlhttprequest对象方法不一样
+	if(window.Activeobject){
+			xmlHttpRequest=new Activeobject("Microsoft.XMLHTTP");
+			
+		}else{
+			xmlHttpRequest=new XMLHttpRequest();
+
+			}
+		return xmlHttpRequest;
+	}
+
+var myXmlHttpRequest="";
+//验证用户是否存在
+function checkname(){
+	myXmlHttpRequest=getXmlHttpobject();
+
+	//怎么判断创建ok
+	if( myXmlHttpRequest){
+		//通过myXmlHttpRequest对象发送器请求到服务器的某个页面
+		//第一个参数表示请求的方式:get /post
+		//第二个参数指定url,对那个页面发出ajax请求 (本质仍然是http请求)
+		//第三个参数表示 true表示使用异步机制
+		var url="/login/checkname.php";
+		var data="username="+$('username').value;
+		//window.alert(url);
+		//打开请求
+		myXmlHttpRequest.open("post",url,true);
+
+		//post方法比粗要加的一句话
+		myXmlHttpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		//指定回调函数 .chuli是函数名
+		myXmlHttpRequest.onreadystatechange=chuli;
+
+		//真的发送请求 如果是get请求则填入null即可
+		//如果是post请求，则填入实际的数据
+		myXmlHttpRequest.send(data);
+		}
+	}
+	//回调函数
+	function chuli(){
+		//window.alert("处理函数背回调！"+myXmlHttpRequest.readyState);
+		//我要取出从registerPro.php页面返回的数据
+			if(myXmlHttpRequest.readyState==4){
+
+				//取出直，根据返回信息的格式定.text
+					document.getElementById('myres').innerHTML=myXmlHttpRequest.responseText;
+				}
+		}
+	//这里我们写一个函数
+	function $(id){
+			return document.getElementById(id);
+		}
+</script>-->
+<center>
+<script type="text/javascript" src="<?php echo @Home_JS_URL;?>
+register.js"></script>
+<form name="form1" id="myform" method="post" action="<?php echo @__SELF__;?>
+">
+
+
+     <div class="block block1">  
+
+         <div class="block box">
+             <div class="blank"></div>
+             <div id="ur_here">
+                 当前位置:  <code>&gt;</code> 用户注册 
+             </div>
+         </div>
+         <div class="blank"></div>
+
+
+         <!--放入view具体内容-->
+
+<div class="block box">
+
+<div class="usBox">
+<div class="usBox_2 clearfix">
+<div class="logtitle3"></div>
+<form id="yw0" action="<?php echo @__SELF__;?>
+" method="post">
+    <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
+     <tbody>
+         <tr>
+             <td style="width:13%; text-align: right;">
+                 <label for="User_username" class="required">用户名 
+                     <span class="required">*</span></label>
+             </td>
+
+             <td style="width:87%;">
+                 <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" 
+                        onblur="checkname()"/>                  
+                 <span id="namecheck"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['username'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
+             </td>
+         </tr>
+         <tr>
+             <td align="right">
+                 <label for="User_password" class="required">密码 <span class="required">*</span></label>
+             </td>
+
+             <td>
+                 <input class="inputBg" size="25" name="password" id="User_password" type="password" value="" />         
+             </td>
+         </tr>
+         <tr>
+             <td align="right"><label for="User_password2">密码确认</label></td>
+             <td>
+                 <input class="inputBg" size="25" name="password2" id="User_password2" type="password" />
+             </td>
+
+         </tr>
+         <tr>
+             <td align="right"><label for="User_user_email">邮箱</label></td>
+             <td>
+                 <input class="inputBg" size="25" name="user_email" id="User_email" type="text" value="" 
+                        onblur="checkemail()"/>
+                 <span id="emailcheck"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['user_email'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
+             </td>
+         </tr>
+         <tr>
+
+             <td align="right"><label for="User_user_qq">qq号码</label></td>
+             <td>
+                 <input class="inputBg" size="25" name="user_qq" id="User_qq" type="text" value="" 
+                        onblur="checkqq()"/>
+                 <span id="qqcheck"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['username'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
+             </td>
+         </tr>
+         <tr>
+             <td align="right"><label for="User_user_tel">手机</label></td>
+             <td>
+                 <input class="inputBg" size="25" name="user_tel" id="User_tel" type="text" value="" 
+                        onblur="checkphone()"/>
+                 <span id="phonecheck"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['username'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
+             </td>
+         </tr>
+         <tr>
+             <!--radioButtonList($model,$attribute,$data,$htmlOptions=array())-->
+             <td align="right"><label for="User_user_sex">性别</label></td>
+             <td>
+                 <input id="ytUser_user_sex" type="hidden" value="" name="user_sex"/>
+                 <span id="User_user_sex">
+                     <input id="User_user_sex_0" value="1" checked="checked" type="radio" name="user_sex"/> 
+                     <label for="User_user_sex_0">男</label>&nbsp;
+                     <input id="User_user_sex_1" value="2" type="radio" name="user_sex"/> 
+                     <label for="User_user_sex_1">女</label>&nbsp;
+                     <input id="User_user_sex_2" value="3" type="radio" name="user_sex"/> 
+                     <label for="User_user_sex_2">保密</label></span>                                
+             </td>
+         </tr>
+         <tr>
+             <!--dropDownList($model,$attribute,$data,$htmlOptions=array())-->
+             <td align="right"><label for="User_user_xueli">学历</label></td>
+             <td>
+                 <select name="user_xueli"id="User_xueli">
+                     <option value="1" selected="selected">-请选择-</option>
+                     <option value="2">小学</option>
+
+                     <option value="3">初中</option>
+                     <option value="4">高中</option>
+                     <option value="5">大学</option>
+                 </select>                                <div class="errorMessage" id="User_user_xueli_em_" style="display:none"></div>                            </td>
+         </tr>
+         <tr>
+             <!--checkBoxList($model,$attribute,$data,$htmlOptions=array())-->
+             <td align="right"><label for="User_user_hobby">爱好</label></td>
+
+             <td>
+
+                 <span id="User_hobby">
+                     <input id="User_hobby_0" value="1" type="checkbox" name="user_hobby[]"/> 
+                     <label for="User_user_hobby_0">篮球</label>&nbsp;
+                     <input id="User_hobby_1" value="2" type="checkbox" name="user_hobby[]"/> 
+                     <label for="User_user_hobby_1">足球</label>&nbsp;
+                     <input id="User_hobby_2" value="3" type="checkbox" name="user_hobby[]"/> 
+                     <label for="User_user_hobby_2">排球</label>&nbsp;
+                     <input id="User_hobby_3" value="4" type="checkbox" name="user_hobby[]"/> 
+                     <label for="User_user_hobby_3">棒球</label>
+                 </span>                                
+             </td>
+         </tr>
+         <tr>
+
+             <!--textArea($model,$attribute,$htmlOptions=array())-->
+             <td align="right"><label for="User_user_introduce">简介</label></td>
+             <td>
+                 <textarea cols="50" rows="5" name="user_introduce"id="User_introduce"></textarea>                      
+             </td>
+         </tr>
+         <tr>
+             <td>&nbsp;</td>
+
+             <td align="left">
+                 <input name="Submit" value="" class="us_Submit_reg" type="submit" />
+             </td>
+         </tr>
+         <tr>
+             <td colspan="2">&nbsp;</td>
+         </tr>
+     </tbody>
+ </table>
+</form>
+</div>
+</center>
+</body>
+</html>
+<?php }} ?>

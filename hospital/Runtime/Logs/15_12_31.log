@@ -1,0 +1,195 @@
+[ 2015-12-31T13:20:12+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2015-12-31T13:20:57+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:22:15+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Index/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2015-12-31T13:22:19+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Index/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2015-12-31T13:22:58+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Index/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2015-12-31T13:24:48+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2015-12-31T13:27:36+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:27:39+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Role/__CONTROLLER__/tianjia
+ERR: 非法操作:__CONTROLLER__
+
+[ 2015-12-31T13:27:48+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:29:50+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Role/__CONTROLLER__/tianjia
+ERR: 非法操作:__CONTROLLER__
+
+[ 2015-12-31T13:32:06+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Role/tianjia
+ERR: 非法操作:tianjia
+
+[ 2015-12-31T13:42:02+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:51:16+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Reference/search
+ERR: 无法加载控制器:Reference
+
+[ 2015-12-31T13:51:35+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2015-12-31T13:51:36+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:51:37+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Manager/showlist
+ERR: 非法操作:showlist
+
+[ 2015-12-31T13:51:37+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T13:59:35+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Role/tianjia
+ERR: 非法操作:tianjia
+
+[ 2015-12-31T14:00:42+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 无法加载控制器:Auth
+
+[ 2015-12-31T14:03:54+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/showlist
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Auth/showlist.html
+
+[ 2015-12-31T14:07:37+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/tianjia
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Auth/tianjia.html
+
+[ 2015-12-31T14:08:52+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Auth/__CONTROLLER__/xiugai
+ERR: 非法操作:__CONTROLLER__
+
+[ 2015-12-31T15:12:31+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Manager/changepasswd
+ERR: 非法操作:changepasswd
+
+[ 2015-12-31T15:29:38+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/search
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Biomarker/search.html
+
+[ 2015-12-31T15:34:14+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/tianjia
+ERR: 非法操作:tianjia
+
+[ 2015-12-31T15:42:22+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/biomarker_search1
+ERR: 非法操作:biomarker_search1
+
+[ 2015-12-31T15:42:27+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/search_handle
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Biomarker/search_handle.html
+
+[ 2015-12-31T15:45:58+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/tianjia
+ERR: 非法操作:tianjia
+
+[ 2015-12-31T15:49:04+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/tianjia
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Biomarker/tianjia.html
+
+[ 2015-12-31T15:59:17+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/biomarker_xiugai/genes_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2015-12-31T16:16:05+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/biomarker_add1
+ERR: 非法操作:biomarker_add1
+
+[ 2015-12-31T16:36:08+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/biomarker_search.html
+ERR: 非法操作:biomarker_search
+
+[ 2015-12-31T17:02:18+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/biomarker_xiugai/genes_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2015-12-31T17:12:53+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarker/xiugai/id/1
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Biomarker/xiugai.html
+
+[ 2015-12-31T18:04:07+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/search
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T18:05:25+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/search
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T18:05:25+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/tianjia
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T18:09:59+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/search
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T18:20:46+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/biomarkerprimer_search1
+ERR: 非法操作:biomarkerprimer_search1
+
+[ 2015-12-31T19:10:28+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T19:12:57+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T19:13:44+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T19:19:56+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/search
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T19:20:05+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/BiomarkerPrimer/search
+ERR: 无法加载控制器:BiomarkerPrimer
+
+[ 2015-12-31T19:21:07+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarkerprimer/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T19:21:40+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Biomarkerprimer/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T19:43:00+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Mutation/mutation_search1
+ERR: 非法操作:mutation_search1
+
+[ 2015-12-31T20:13:34+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Mutation/xiugai/id/2
+ERR: Think\Model:talbe方法不存在！
+
+[ 2015-12-31T20:15:26+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Mutation/delete/newIdDelet/2
+ERR: 非法操作:delete
+
+[ 2015-12-31T20:19:51+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Refseqs/search
+ERR: 无法加载控制器:Refseqs
+
+[ 2015-12-31T20:55:35+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Refseqs/delete/newIdDelet/3
+ERR: 非法操作:delete
+
+[ 2015-12-31T20:59:28+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:28+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:30+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:31+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:31+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:32+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:33+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T20:59:33+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T21:05:28+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T21:05:48+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T21:06:59+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search
+ERR: 无法加载控制器:Drug
+
+[ 2015-12-31T21:15:49+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/drug_search1
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Drug/drug_search1.html
+
+[ 2015-12-31T21:17:17+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/search_handle
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Admin/View/Drug/search_handle.html
+
+[ 2015-12-31T21:19:22+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Admin/Drug/tianjia
+ERR: 非法操作:tianjia
+

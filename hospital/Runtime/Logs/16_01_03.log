@@ -1,0 +1,126 @@
+[ 2016-01-03T10:03:36+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:03:37+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:03:39+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Workflow/step1.html
+ERR: 无法加载控制器:Workflow
+
+[ 2016-01-03T10:03:40+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Treatment/treatmentproposal_search.html
+ERR: 无法加载控制器:Treatment
+
+[ 2016-01-03T10:03:41+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Viewreport/viewreport_search.html
+ERR: 无法加载控制器:Viewreport
+
+[ 2016-01-03T10:03:41+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Queryinformation/queryinformation.html
+ERR: 无法加载控制器:Queryinformation
+
+[ 2016-01-03T10:03:42+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Queryreference/queryreferencedata_search.html
+ERR: 无法加载控制器:Queryreference
+
+[ 2016-01-03T10:03:42+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Consulation/patientconsultation.html
+ERR: 无法加载控制器:Consulation
+
+[ 2016-01-03T10:03:43+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:07:17+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:07:17+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:07:18+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:07:19+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Medicalrecord/medicalrecordmanagement.html
+ERR: 无法加载控制器:Medicalrecord
+
+[ 2016-01-03T10:07:21+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:07:22+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:18:32+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:18:33+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/medicalrecordmanagement.html
+ERR: 无法加载控制器:Binli
+
+[ 2016-01-03T10:18:35+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/medicalrecordmanagement.html
+ERR: 无法加载控制器:Binli
+
+[ 2016-01-03T10:18:59+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:19:03+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/suizhenjilu_search
+ERR: 非法操作:suizhenjilu_search
+
+[ 2016-01-03T10:20:03+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T10:22:52+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_add
+ERR: 非法操作:chakanbinli_add
+
+[ 2016-01-03T10:25:06+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_search1
+ERR: 非法操作:chakanbinli_search1
+
+[ 2016-01-03T10:25:39+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_search_handle
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Home/View/Binli/chakanbinli_search_handle.html
+
+[ 2016-01-03T10:32:14+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/works_id/1
+ERR: 非法操作:chakanbinli_xiugai
+
+[ 2016-01-03T10:36:27+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/works_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T10:37:03+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/works_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T10:37:44+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/id/1
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Home/View/Binli/chakanbinli_add.html
+
+[ 2016-01-03T11:11:42+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_add1
+ERR: 非法操作:chakanbinli_add1
+
+[ 2016-01-03T11:12:32+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_add1
+ERR: 非法操作:chakanbinli_add1
+
+[ 2016-01-03T11:34:08+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/works_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T11:34:17+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai/works_id/1
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T11:35:06+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_add
+ERR: 非法操作:chakanbinli_add
+
+[ 2016-01-03T11:41:36+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/suizhenjilu_search1
+ERR: 非法操作:suizhenjilu_search1
+
+[ 2016-01-03T11:41:51+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/suizhenjilu_search_handle
+ERR: 模板不存在:D:/xampp/htdocs/Cancer/hospital/Home/View/Binli/suizhenjilu_search_handle.html
+
+[ 2016-01-03T11:44:20+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_add
+ERR: 非法操作:chakanbinli_add
+
+[ 2016-01-03T11:45:02+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T11:46:04+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/ADMIN_CSS_URL/admin.css
+ERR: 非法操作:ADMIN_CSS_URL
+
+[ 2016-01-03T11:46:08+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Binli/chakanbinli_xiugai
+ERR: 参数错误或者未定义:id
+
+[ 2016-01-03T11:54:18+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/suizhen_xiugai/works_id/1
+ERR: 非法操作:suizhen_xiugai
+
+[ 2016-01-03T11:54:21+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Works/suizhen_xiugai/works_id/2
+ERR: 非法操作:suizhen_xiugai
+
+[ 2016-01-03T11:54:23+08:00 ] 127.0.0.1 /Cancer/hospital/index.php/Home/Workflow/step1.html
+ERR: 无法加载控制器:Workflow
+

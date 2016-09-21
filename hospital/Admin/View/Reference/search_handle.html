@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：参考文献-》参考文献查询</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/search_handle">
+	<tr>
+		<td align="right">ID</td><td><input type="text" name="id" id="id" size="25"></td>
+		<td align="right">&nbsp;Article Title</td><td><input type="text" name="articletitle" id="articletitle" size="25"></td>
+		<td>&nbsp;<input type=submit name="Submit" value="Search" onclick="">
+	
+		</td>
+	</tr>
+</form>
+</table>
+<br><br>
+
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>Artical Title</td>
+                        <td>Category</td>
+                        <td>Disease Type</td>
+                        <td>Drug</td>
+                        <td>Biomarker</td>
+                        <td>Author</td>
+                        <td>Year</td>
+                        <td>Journal</td>
+                        <td>PubmedID</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.ArticalTitle}</td>
+                        <td>{$v.Category}</a></td>
+                        <td>{$v.DiseaseType}</td>
+                        <td>{$v.Drug}</td>
+                        <td>{$v.Biomarker}</td>
+                        <td>{$v.Author}</td>
+                        <td>{$v.Year}</td>
+                        <td>{$v.Journal}</td>
+                        <td>{$v.PubmedID}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/xiugai/id/{$v.ID}">修改</a></td>
+                         <td><a href="{$smarty.const.__CONTROLLER__}/delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                   
+</table>
+</font>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+<title></title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：药物-》药物查询</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<fonr size="3" color="black">
+    <form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/search_handle">
+	<tr>
+		<td align="right">DrugName</td><td><input type="text" name="drugname" id="drugname" size="25"></td>
+		<td align="right">&nbsp;Synonyms</td><td><input type="text" name="synonyms" id="synonyms" size="25"></td>
+        <td align="right">&nbsp;<input type="submit" name="Submit" value="Search" onclick="">
+		
+	</tr>
+</form>
+</table>
+<br><br>
+
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>DrugBankID</td>
+                        <td>DrugName</td>
+                        <td>Synonyms</td>
+                        <td>DrugChineseName</td>
+                        <td>Maker</td>
+                        <td>Maker_CN</td>
+                        <td>TradeName</td>
+                        <td>Target</td>
+                        <td>Class</td>
+                        <td>ChineseBrandName</td>
+                        <td>AveragePrice</td>
+                        <td>DrugStage</td>
+                        <td>DrugStatus</td>
+                        <td>AvailableInChina</td>
+                        <td>Country</td>
+                        <td>FullPrescribingInformation</td>
+                        <td>FullPrescribingInformation_CN</td>
+                        <td>Description</td>
+                        <td>Description_CN</td>
+                        <td>SideEffect</td>
+                        <td>MechanismOfAction</td>
+                        <td>MechanismOfAction_CN</td>
+                        <td>Contraindication</td>
+                        <td>Contraindication_CN</td>
+                        <td>Attention</td>
+                        <td>Attention_CN</td>
+                        <td>UntowardEffect</td>
+                        <td>UntowardEffect_CN</td>
+                        <td>PharmaceuticalComposition</td>
+                        <td>PharmaceuticalComposition_CN</td>
+                        <td>DrugInteraction</td>
+                        <td>DrugInteraction_CN</td>
+                        <td>Event</td>
+                        <td>Event_CN</td>
+                        <td>Date</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.DrugBankID}</td>
+                        <td>{$v.DrugName}</a></td>
+                        <td>{$v.Synonyms}</td>
+                        <td>{$v.DrugChineseName}</td>
+                        <td>{$v.Maker}</td>
+                        <td>{$v.Maker_CN}</td>
+                        <td>{$v.TradeName}</td>
+                        <td>{$v.Target}</td>
+                        <td>{$v.Class}</td>
+                         <td>{$v.ChineseBrandName}</td>
+                        <td>{$v.AveragePrice}</a></td>
+                        <td>{$v.DrugStage}</td>
+                        <td>{$v.DrugStatus}</td>
+                        <td>{$v.AvailableInChina}</td>
+                        <td>{$v.Country}</td>
+                        <td>{$v.FullPrescribingInformation}</td>
+                        <td>{$v.FullPrescribingInformation_CN}</td>
+                        <td>{$v.Description}</td>
+                         <td>{$v.Description_CN}</td>
+                        <td>{$v.SideEffect}</a></td>
+                        <td>{$v.MechanismOfAction}</td>
+                        <td>{$v.MechanismOfAction_CN}</td>
+                        <td>{$v.Contraindication}</td>
+                        <td>{$v.Contraindication_CN}</td>
+                        <td>{$v.Attention}</td>
+                        <td>{$v.Attention_CN}</td>
+                        <td>{$v.UntowardEffect}</td>
+                         <td>{$v.UntowardEffect_CN}</td>
+                        <td>{$v.PharmaceuticalComposition}</a></td>
+                        <td>{$v.PharmaceuticalComposition_CN}</td>
+                        <td>{$v.DrugInteraction}</td>
+                        <td>{$v.DrugInteraction_CN}</td>
+                        <td>{$v.Event}</td>
+                        <td>{$v.Event_CN}</td>
+                        <td>{$v.Date}</td>
+                        
+                        <td><a href="{$smarty.const.__CONTROLLER__}/xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    <tr>
+                      <td colspan="100" style="text-align: center;">
+                            {$pagelist}
+                      </td>
+                    </tr>
+</table>
+</body>
+</html>

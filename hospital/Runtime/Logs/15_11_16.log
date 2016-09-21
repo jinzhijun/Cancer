@@ -1,0 +1,270 @@
+[ 2015-11-16T19:15:27+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file 'medicalrecordmanagement.html' in 'Works/workflow_upload.html'
+
+[ 2015-11-16T19:17:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file 'viewreport.html' in 'Works/workflow_upload.html'
+
+[ 2015-11-16T19:19:23+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file 'step1.html' in 'Works/workflow_upload.html'
+
+[ 2015-11-16T19:23:35+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:02:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file './step3.html' in 'Works/workflow_upload.html'
+
+[ 2015-11-16T21:05:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-16T21:05:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Syntax Error in template "D:\xampp\htdocs\Cancer\hospital\Home\View\Works\step3.html"  on line 8 "*{margin:0;padding:0;list-style-type:none;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2015-11-16T21:07:10+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Syntax Error in template "D:\xampp\htdocs\Cancer\hospital\Home\View\Works\step3.html"  on line 8 "*{margin:0;padding:0;list-style-type:none;}"  - Unexpected ":", expected one of: "}" , " "
+
+[ 2015-11-16T21:07:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:07:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:07:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:07:47+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:14:04+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:14:04+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:14:04+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:14:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:14:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:14:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:14:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:15:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:15:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:15:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:15:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:16:07+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:16:07+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:16:07+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:17:53+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:17:53+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:17:53+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:17:58+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:17:58+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:17:58+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:17:59+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:17:59+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:17:59+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:17:59+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:18:39+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:18:39+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:18:39+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:18:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:18:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:18:54+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:19:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:19:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:19:13+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:20:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:20:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:20:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:23:44+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:23:44+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:23:44+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:24:03+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:24:03+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:24:03+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:24:03+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:24:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:24:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:24:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:27:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:27:53+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:27:53+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:40:52+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file 'chosegeneaccordingtodisease.html' in './step3.html'
+
+[ 2015-11-16T21:41:42+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file './chosegeneaccordingtopanel.php' in './step3.html'
+
+[ 2015-11-16T21:42:09+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Unable to load template file './chosegeneaccordingtopanel.php' in './step3.html'
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/chosegeneaccordingtodisease.css
+ERR: 非法操作:chosegeneaccordingtodisease.css
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/chosegeneaccordingtopanel.css
+ERR: 非法操作:chosegeneaccordingtopanel.css
+
+[ 2015-11-16T21:42:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/chosegeneaccordingtomedical.css
+ERR: 非法操作:chosegeneaccordingtomedical.css
+
+[ 2015-11-16T21:47:57+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/workflow_upload.html
+ERR: Syntax Error in template "D:\xampp\htdocs\Cancer\hospital\Home\View\Works\chosegeneaccordingtodisease.html"  on line 6 "&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;{$smarty.Home_CSS_URL}/chosegeneaccordingtodisease.css&quot; /&gt;" $smarty.Home_CSS_URL is invalid
+
+[ 2015-11-16T21:49:38+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:49:38+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:49:38+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:50:17+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:50:17+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:50:17+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:50:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:50:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:50:19+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:50:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step4.css
+ERR: 非法操作:step4.css
+
+[ 2015-11-16T21:50:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step1.css
+ERR: 非法操作:step1.css
+
+[ 2015-11-16T21:50:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/step2.css
+ERR: 非法操作:step2.css
+
+[ 2015-11-16T21:50:29+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/treatmentproposal.css
+ERR: 非法操作:treatmentproposal.css
+
+[ 2015-11-16T21:50:30+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/viewreport.css
+ERR: 非法操作:viewreport.css
+
+[ 2015-11-16T21:50:31+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryinformation.html
+ERR: 非法操作:queryinformation
+
+[ 2015-11-16T21:50:32+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/queryreferencedata.css
+ERR: 非法操作:queryreferencedata.css
+
+[ 2015-11-16T21:50:33+08:00 ] ::1 /Cancer/hospital/index.php/Home/Works/patientconsultation.html
+ERR: 非法操作:patientconsultation
+
+[ 2015-11-16T21:50:39+08:00 ] ::1 /Cancer/hospital/index.php/Home/login/logout.php
+ERR: 无法加载控制器:Login
+
+[ 2015-11-16T22:07:16+08:00 ] ::1 /Cancer/hospital/index.php/Home/Manager/login.html
+ERR: 无法加载控制器:Manager
+

@@ -1,0 +1,202 @@
+<html>
+<head>
+<link href="{$smarty.const.Admin_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+		.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style></head>
+<body>
+<font size="4" color="black">
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：药物-》修改药物</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+<input type="hidden" name="id" value="{$info.ID}"/>
+	<table class="table_a" border="1" width="100%">
+	<tr><td align="right">drugBankId:</td><td><input type="text" name="DrugBankID" value="{$info.DrugBankID}"></td><td align="right">Synonyms:</td><td><input type="text" name="sysnoyms" value="{$info.Synonyms}"></td></tr>
+	<tr><td align="right">Synonyms:</td><td><input type="text" name="Synonyms" value="{$info.Synonyms}"></td><td align="right"></td><td></td></tr>
+	<tr><td align="right">Drug Name:</td><td><input type="text" name="DrugName" value="{$info.DrugName}"></td><td align="right">Drug Chinese Name:</td><td><input type="text" name="DrugChineseName" value="{$info.DrugChineseName}"></td></tr>
+	<tr><td align="right">Maker:</td><td><input type="text" name="Maker" value="{$info.Maker}"></td><td align="right">Maker(CN):</td><td><input type="text" name="Maker_CN" value="{$info.Maker_CN}"></td></tr>
+	<tr><td align="right">tradename:</td><td><input type="text" name="TradeName" value="{$info.TradeName}"></td><td align="right">Target:</td><td><input type="text" name="Target" value="{$info.Target}"></td></tr>
+	<tr><td align="right">Class:</td><td><input type="text" name="Class" value="{$info.Class}"></td><td align="right">Chinese Brand Name:</td><td><input type="text" name="ChineseBrandName" value="{$info.ChineseBrandName}"></td></tr>
+	<tr><td align="right">Average Price:</td><td><input type="text" name="AveragePrice" value="{$info.AveragePrice}"></td><td align="right">Drug Stage:</td><td><input type="text" name="DrugStage" value="{$info.DrugStage}"></td></tr>
+        <tr><td align="right">Drug Status</td><td><input type="text" name="DrugStatus" value="{$info.DrugStatus}"></td>
+	<td align="right">Avaliable In China:</td>
+	<td>
+		<select name="AvailableInChina">
+			<option value="0">---------请选择------</option>
+                
+                <option value="{$info.AvailableInChina}" selected="selected">{$info.AvailableInChina}</option>
+                {foreach $info_A as $k => $v}
+                {if {$v.AvailableInChina}!=""}
+                <option value="{$v.AvailableInChina}">{$v.AvailableInChina}</option>
+                {/if}
+                 {/foreach}
+                }
+		</select>
+	</td>
+	</tr>
+	<tr><td align="right">Country:</td>
+	<td><select name="Country">
+                <option value="0">--------------请选择----------------</option>
+                
+                <option value="{$info.Country}" selected="selected">{$info.Country}</option>
+                {foreach $info_B as $k => $v}
+                {if {$v.Country}!=""}
+                <option value="{$v.Country}">{$v.Country}</option>
+                {/if}
+                 {/foreach}
+                }
+        </select>
+	</td>
+	
+	<tr><td align="right">Full Prescribing Information:</td><td><input type="text" name="FullPrescribingInformation" value="{$info.FullPrescribingInformation}"></td>
+		<td align="right">Full Prescribing Information(CN):</td><td><input type="text" name="FullPrescribingInformation_CN" value="{$info.FullPrescribingInformation_CN}"></td>
+	</tr>
+	<tr><td align="right">Description:</td><td><textarea cols="50" rows="5" name="Description">{$info.Description}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Description(CN):</td><td><textarea cols="50" rows="5" name="Description_CN">{$info.Description_CN}</textarea></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Side Effect:</td><td><textarea cols="50" rows="3" name="SideEffect">{$info.SideEffect}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr><br>
+	<tr><td align="right">Mechanism Of Action:</td><td><textarea cols="50" rows="3" name="MechanismOfAction">{$info.MechanismOfAction}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Mechanism Of Action(CN):</td><td><textarea cols="50" rows="3" name="MechanismOfAction_CN">{$info.MechanismOfAction_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Contraindication:</td><td><textarea cols="50" rows="3" name="Contraindication">{$info.Contraindication}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Contraindication(CN):</td><td><textarea cols="50" rows="3" name="Contraindication_CN">{$info.Contraindication_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Attention:</td><td><textarea cols="50" rows="3" name="Attention">{$info.Attention}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Attention(CN):</td><td><textarea cols="50" rows="3" name="Attention_CN">{$info.Attention_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align="right">Untoward Effect:</td><td><textarea cols="50" rows="3" name="UntowardEffect">{$info.UntowardEffect}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Untoward Effect(CN):</td><td><textarea cols="50" rows="3" name="UntowardEffect_CN">{$info.UntowardEffect_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Pharmaeutical Composition:</td><td><textarea cols="50" rows="3" name="PharmaceuticalComposition">{$info.PharmaceuticalComposition}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Pharmaeutical Composition(CN):</td><td><textarea cols="50" rows="3" name="PharmaceuticalComposition_CN">{$info.PharmaceuticalComposition_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Drug Interaction:</td><td><textarea cols="50" rows="3" name="DrugInteraction">{$info.DrugInteraction}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	<tr><td align="right">Drug Interaction(CN):</td><td><textarea cols="50" rows="3" name="DrugInteraction_CN">{$info.DrugInteraction_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+	
+        <tr><td align="right">Event:</td><td><textarea cols="50" rows="3" name="Event">{$info.Event}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align="right">Event(CN):</td><td><textarea cols="50" rows="3" name="Event_CN">{$info.Event_CN}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td align="right">Date:</td><td><textarea cols="50" rows="3" name="Date">{$info.Date}</textarea><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td align="center">
+<tr>
+	<td align="right">Last Updated:</td><td><input type="text" name="LastUpdated" value="{$info.LastUpdated}" readonly="readonly"></td><td  align="right">Operator:</td><td><input type="text" name="Operator" value="{$info.Operator}" readonly="readonly"></td>
+</tr>
+<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)"></td>
+<!--	<td><input type="submit"  name="Submit2" value="Close" onClick="history.go(-1)">
+	</td>-->
+</tr>
+		
+		</table>
+
+</form>
+<hr/>
+
+<script language="javascript">
+	function check(form){				//验证表单是否为空
+		if(form.drugbankid.value==""){
+			alert("请输入drugbankid！");form.drugbankid.focus();return false;
+		}
+		if(form.synonyms.value==""){
+			alert("请输入synonyms！");form.synonyms.focus();return false;
+		}
+		if(form.drugname.value==""){
+			alert("请输入drugname！");form.drugname.focus();return false;
+		}
+		if(form.drugchinesename.value==""){
+			alert("请输入drugchinesename！");form.drugchinesename.focus();return false;
+		}
+		if(form.maker.value==""){
+			alert("请输入maker！");form.maker.focus();return false;
+		}
+		if(form.makercn.value==""){
+			alert("请输入makercn！");form.makercn.focus();return false;
+		}
+		if(form.tradename.value==""){
+			alert("请输入tradename！");form.tradename.focus();return false;
+		}
+		if(form.target.value==""){
+			alert("请输入target！");form.target.focus();return false;
+		}
+		if(form.class.value==""){
+			alert("请输入class！");form.class.focus();return false;
+		}
+		if(form.chinesebrandname.value==""){
+			alert("请输入chinesebrandname！");form.chinesebrandname.focus();return false;
+		}
+		if(form.averageprice.value==""){
+			alert("请输入averageprice！");form.averageprice.focus();return false;
+		}
+		if(form.drugstage.value==""){
+			alert("请输入drugstage！");form.drugstage.focus();return false;
+		}
+		if(form.drugstatus.value==""){
+			alert("请输入drugstatus！");form.isrelease.focus();return false;
+		}
+		if(form.avaliableinchina.value==""){
+			alert("请输入avaliableinchina！");form.avaliableinchina.focus();return false;
+		}
+	
+		
+		if(form.fpi.value==""){
+			alert("请输入fpi！");form.fpi.focus();return false;
+		}
+		if(form.fpicn.value==""){
+			alert("请输入fpicn！");form.fpicn.focus();return false;
+		}
+		if(form.description.value==""){
+			alert("请输入description！");form.description.focus();return false;
+		}
+		if(form.descriptioncn.value==""){
+			alert("请输入descriptioncn！");form.descriptioncn.focus();return false;
+		}
+		if(form.sideeffect.value==""){
+			alert("请输入sideeffect！");form.sideeffect.focus();return false;
+		}
+		if(form.moa.value==""){
+			alert("请输入moa！");form.moa.focus();return false;
+		}
+		if(form.moacn.value==""){
+			alert("请输入moacn！");form.moacn.focus();return false;
+		}
+		if(form.contraindication.value==""){
+			alert("请输入contraindication！");form.contraindication.focus();return false;
+		}
+		if(form.contraindicationcn.value==""){
+			alert("请输入contraindicationcn！");form.contraindicationcn.focus();return false;
+		}
+		if(form.attention.value==""){
+			alert("请输入attention！");form.attention.focus();return false;
+		}
+		if(form.untowardeffect.value==""){
+			alert("请输入untowardeffect！");form.untowardeffect.focus();return false;
+		}
+		if(form.untowardeffectcn.value==""){
+			alert("请输入untowardeffectcn！");form.untowardeffectcn.focus();return false;
+		}
+		if(form.pharmaeuticalcomposition.value==""){
+			alert("请输入pharmaeuticalcomposition！");form.pharmaeuticalcomposition.focus();return false;
+		}
+		if(form.pharmaeuticalcompositioncn.value==""){
+			alert("请输入pharmaeuticalcompositioncn！");form.pharmaeuticalcompositioncn.focus();return false;
+		}
+		if(form.druginteraction.value==""){
+			alert("请输入druginteraction！");form.druginteraction.focus();return false;
+		}
+		if(form.druginteractioncn.value==""){
+			alert("请输入druginteractioncn！");form.druginteractioncn.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>

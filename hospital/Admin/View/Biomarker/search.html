@@ -1,0 +1,123 @@
+<html>
+<title></title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+ .table_a{ border-collapse:collapse;border: 1px solid #E3E6EB }
+.table_a td{ line-height: 25px; padding-left: 8px;text-align: left; }
+.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+
+</head>
+<body>
+<font size="4" color="black">
+<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：生物标记-》生物标记查询</span>
+            </span>
+        </div>
+</font>
+
+<table border="0px" cellpadding="0" cellspacing="0" bgcolor="" align="left">
+<font size="3" color="black">
+<form name="myform" method="post" action="{$smarty.const.__CONTROLLER__}/search_handle">
+	<tr><td align="right">基因符号</td><td align="left"><input type="text" name="genesymbol" id="genesymbol" size="25"></td>
+	    <td align="right">&nbsp;同义密码子</td><td align="left"><input type="text" name="synonyms" id="synonyms" size="25"></td>
+            <td align="right">&nbsp;<input type="submit" name="Submit" value="查询" onclick=''/></td>
+	
+	</tr>
+</form>
+</table>
+<br><br>
+
+<table border="1px" class="table_a" id="result">
+                    <tr style="font-weight: bold;">
+                        <td>序号</td>
+                        <td>Gene ID</td>
+                        <td>Gene Symbol</td>
+                        <td>Synonyms</td>
+                        <td>Gene Type</td>
+                        <td>Chromosome</td>
+                        <td>Strand</td>
+                        <td>Start</td>
+                        <td>End</td>
+                        <td>Category</td>
+                        <td align="center">操作</td>
+                    </tr>
+                    {foreach $info as $k=>$v}
+                    <tr id="product1">
+<!--                        <td><font color="green">{$v@iteration}</font></td>-->
+                        <td><font color="green">{$v.ID}</font></td>
+                        <td>{$v.GeneID}</td>
+                        <td>{$v.GeneSymbol}</a></td>
+                        <td>{$v.Synonyms}</td>
+                        <td>{$v.GeneType}</td>
+                        <td>{$v.Chromosome}</td>
+                        <td>{$v.Strand}</td>
+                        <td>{$v.Start}</td>
+                        <td>{$v.End}</td>
+                        <td>{$v.Category}</td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/xiugai/id/{$v.ID}">修改</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/delete/newIdDelet/{$v.ID}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></td>
+                    </tr>
+                    {/foreach}
+                    <tr>
+                      <td colspan="100" style="text-align: center;">
+                            {$pagelist}
+                      </td>
+                    </tr>
+</table>
+
+<script language="javascript">
+        function searchinfo(){
+             // document.body.innerHTML=""; //先清空页面内容
+              document.getElementById('result').innerHTML="xhr.responseText";
+            //ajax发起请求，并接受返回的信息
+               
+                
+                //1.创建对象
+                var xmlHttp=new XMLHttpRequest();
+                
+                //4.给ajax设置事件
+                var url="./03.php";
+               // url=url+"&genesymbol="+$("#genesymbol").val()+"&synonyms="+$("#synonyms").val();
+                
+                xmlHttp.onreadystatechange=function(){
+                    if(xhr.readyState==4){
+                        
+                        document.getElementById('result').innerHTML=xhr.responseText;
+                    }
+                    
+                    
+                };
+                
+                //2.创建新的http请求
+                
+                xmlHttp.open("GET",url);
+                
+                //3.发送请求
+                xmlHttp.send(null);
+                
+                
+         }
+	function check(form){				//验证表单是否为空
+		if(form.genesymbol.value==""){
+			alert("请输入genesymbol！");form.genesymbol.focus();return false;
+		}
+		if(form.synonyms.value==""){
+			alert("请输入synonyms！");form.synonyms.focus();return false;
+		}
+                    form.submit();
+                }
+</script>
+			
+</body>
+</html>

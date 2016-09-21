@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+body{
+	border:1px solid silver;
+	width:800px;
+	height:auto;
+	/*margin:0 auto;*/
+	/* background-color:blue; */
+}
+
+table{
+	/* background-color:silver; */
+
+}
+
+.b1{
+	background-color:silver;
+}
+
+#td1{
+	background-color:#FFE4C4;
+	
+}
+
+#input1{
+	background-color:#AB82FF;
+}

@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="{$smarty.const.Admin_CSS_URL}mine.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+		.div_head{
+    font-size: 13px;
+    margin: 10px 5px;
+    padding-left: 10px;
+    line-height: 25px;
+    height:25px;
+    background-color: #E8F2FC;
+    border-bottom: solid #1c94c4 1px
+}
+</style>
+</head>
+<body>
+<font size="4" color="black">
+	<div class="div_head">
+            <span>
+                <span style="float: left;">当前位置是：疾病-》修改疾病</span>
+            </span>
+        </div>
+</font>
+<hr/>
+<font size="3" color="black">
+<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+<input type="hidden" name="id" value="{$info.ID}"/>
+	<table class="table_a" border="1" width="100%">
+	<tr><td align="right">MeSH ID:</td><td><input type="text" name="MeSHID" value="{$info.MeSHID}"></td><td align="right">Type:</td><td><input type="text" name="Type" value="{$info.Type}"></td></tr>
+	<tr><td align="right">Sub Type:</td><td><input type="text" name="SubType" value="{$info.SubType}"></td><td align="right">Disease Name:</td><td><input type="text" name="DiseaseName" value="{$info.DiseaseName}"></td></tr>
+	<tr><td align="right">Alias:</td><td><input type="text" name="Alias" value="{$info.Alias}"></td><td align="right">Chinese Name:</td><td><input type="text" name="ChineseName" value="{$info.ChineseName}"></td></tr>
+	<tr><td align="right">Description:</td>
+		<td><textarea name="Description" cols="70" rows="3">{$info.Description}</textarea></td>
+		<td align="right">Disease Stage:</td><td><input type="text" name="DiseaseStage" value="{$info.DiseaseStage}"></td>
+	</tr>
+	<tr>
+	<td align="right">Last Updated:</td><td><input type="text" name="LastUpdated" value="{$info.LastUpdated}" readonly="readonly"></td><td  align="right">Operator:</td><td><input type="text" name="Operator" value="{$info.Operator}" readonly="readonly"></td>
+</tr>
+	<tr>
+	<td align="center">
+	<input type="submit"  name="Submit" class="btn_grey" value="Save" onClick="return check(form1)">
+	
+	</td>
+</tr>
+</table>
+</form>
+
+
+<hr/>
+<script language="javascript">
+	function check(form){
+		if(form.meshid.value==""){
+			alert("请输入meshid");form.meshid.focus();return false;
+		}
+		if(form.type.value==""){
+			alert("请输入type");form.type.focus();return false;
+		}
+		if(form.subtype.value==""){
+			alert("请输入subtype");form.subtype.focus();return false;
+		}
+		if(form.diseasename.value==""){
+			alert("请输入diseasename");form.diseasename.focus();return false;
+		}
+		if(form.alias.value==""){
+			alert("请输入alias");form.alias.focus();return false;
+		}
+		if(form.chinesename.value==""){
+			alert("请输入chinesename");form.chinesename.focus();return false;
+		}
+		if(form.description.value==""){
+			alert("请输入description");form.description.focus();return false;
+		}
+form.submit();
+}
+</script>
+</font>
+</body>
+</html>
