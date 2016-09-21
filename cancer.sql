@@ -1,3 +1,6 @@
+/**
+ * 这个项目是我刚刚从github上面才导入到本地的工程。
+ */
 -- MySQL dump 10.13  Distrib 5.6.25, for Linux (x86_64)
 --
 -- Host: localhost    Database: cancer
