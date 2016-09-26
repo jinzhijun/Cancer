@@ -22,24 +22,23 @@
     </head>
     <body>
         <table height="100%" cellspacing=0 cellpadding=0 width=170 
-               background={$smarty.const.Admin_IMG_URL}/menu_bg.jpg border=0>
+               background={$smarty.const.Admin_IMG_URL}menu_bg.jpg border=0>
                <tr>
                 <td valign=top align=middle>
                     <table cellspacing=0 cellpadding=0 width="100%" border=0>
-
                         <tr>
-                            <td height=10></td></tr></table>
-                            {foreach $auth_infoA as $k=>$v}
+                            <td height=10></td>
+                        </tr>
+                    </table>
+                    {foreach $auth_infoA as $k=>$v}
                     <table cellspacing=0 cellpadding=0 width=150 border=0>
-
                         <tr height=22>
                             <td style="padding-left: 30px" background={$smarty.const.Admin_IMG_URL}menu_bt.jpg><a 
                                     class=menuparent onclick=expand({$v.auth_id}) 
                                     href="javascript:void(0);">{$v.auth_name}</a></td></tr>
-                        <tr height=4>
-                            <td></td></tr></table>
-                    <table id=child{$v.auth_id} style="display: none" cellspacing=0 cellpadding=0 
-                           width=150 border=0>
+                        <tr height=4><td></td></tr>
+                    </table>
+                    <table id=child{$v.auth_id} style="display: none" cellspacing=0 cellpadding=0 width=150 border=0>
                            {foreach $auth_infoB as $kk=>$vv}
                            {if $vv.auth_pid===$v.auth_id}
                         <tr height=20>
@@ -50,10 +49,10 @@
                                    target=right>{$vv.auth_name}</a></td></tr>
                             {/if}
                             {/foreach}
-                        <tr height=4>
-                            <td colspan=2></td></tr></table>
-                            {/foreach}
-                                   </td>
+                        <tr height=4><td colspan=2></td></tr>
+                    </table>
+                    {/foreach}
+                    </td>
                 <td width=1 bgcolor=#d1e6f7></td>
             </tr>
         </table>
